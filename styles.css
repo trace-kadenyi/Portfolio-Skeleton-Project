@@ -13,7 +13,7 @@ body {
 main {
   width: 375px;
   margin: auto;
-  background: #F7F7F9;
+  background: #f7f7f9;
 }
 
 .mobile-skeleton {
@@ -127,8 +127,8 @@ main {
 .first { margin: 10px 10px; }
 .second { margin: 10px 0; }
 
-/************** 
-  Works 
+/**************
+  Works/about
 **************/
 
 .works-sect {
@@ -139,8 +139,8 @@ main {
   background: #E5E5E5;
   background-color: #fff;
   margin: 0 auto 0;
-  
 }
+
 .project1 { margin-top: 114px; }
 
 .projects {
@@ -172,8 +172,6 @@ main {
   text-decoration: none;
 }
 
-.about-connect a:hover { text-decoration: underline; }
-
 .tonic:hover {
   text-decoration: underline;
   text-decoration-color: #6070ff;
@@ -201,11 +199,6 @@ main {
   text-decoration: none;
   font-size: 13px;
   color: #7a869a;
-}
-
-.description li a:hover {
-  text-decoration: underline;
-  text-decoration-color: #6070ff;
 }
 
 .text-sect {
@@ -276,15 +269,11 @@ a:hover { text-decoration: underline; }
 .main-img:hover { border: 1px #396df2 solid; }
 .project4 { margin-bottom: 114px; }
 
-/************** 
-  About 
-**************/
-
 .about-sect {
   width: 375px;
   height: 1165px;
   left: 0;
-  background: #E5E5E5;
+  background: #e5e5e5;
   background-color: #fff;
   margin: 0 auto 50px;
   border-top-right-radius: 75px;
@@ -308,11 +297,10 @@ a:hover { text-decoration: underline; }
   width: 117px;
 }
 
-
 .about > *:hover {
   text-decoration: underline;
   text-decoration-color: #6070ff;
-} 
+}
 
 .connect a:hover { text-decoration: underline; }
 .about-contacts ul{
@@ -341,8 +329,8 @@ a:hover { text-decoration: underline; }
 .abilities-intro:hover {
   text-decoration: underline;
   text-decoration-color: #6070ff;
-
 }
+
 .abilities-intro h4 {
   width: 237px;
   height: 24px;
@@ -350,7 +338,7 @@ a:hover { text-decoration: underline; }
 }
 
 .frames { margin-bottom: 48px; }
-.frames h4{ margin-right: 35px; }
+.frames h4 { margin-right: 35px; }
 .skills h4 { margin-right: 35px; }
 
 .abilities-section ul {
@@ -377,3 +365,10 @@ a:hover { text-decoration: underline; }
 }
 
 .abilities-section img { margin-right: 16px; }
+
+.description li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #6070ff;
+}
+
+.about-connect a:hover { text-decoration: underline; }
