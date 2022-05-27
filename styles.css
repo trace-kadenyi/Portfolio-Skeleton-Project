@@ -9,6 +9,7 @@ body {
   background: #e5e5e5;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
+
 main {
   width: 375px;
   margin: auto;
@@ -127,16 +128,13 @@ main {
   align-items: baseline;
 }
 
-.first {
-  margin: 10px 10px;
-}
-.second {
-  margin: 10px 0;
-}
+.first { margin: 10px 10px; }
+.second { margin: 10px 0; }
 
 /************** 
   Works 
 **************/
+
 .works-sect {
   width: 375px;
   height: 2788px;
@@ -147,15 +145,15 @@ main {
   margin: 0 auto 0;
   
 }
-.project1 {
-  margin-top: 114px;
-}
+.project1 { margin-top: 114px; }
+
 .projects {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
   background: rgb(243, 243, 243);
 }
+
 .oneProject {
   box-sizing: border-box;
   padding: 16px;
@@ -169,6 +167,7 @@ main {
   display: flex;
   flex-direction: column;
 }
+
 .tonic {
   color: #172b4d;
   font-weight: 700;
@@ -176,13 +175,14 @@ main {
   line-height: 44px;
   text-decoration: none;
 }
+
 .tonic:hover {
   text-decoration: underline;
   text-decoration-color: #6070ff;
 }
-.description {
-  display: flex;
-}
+
+.description { display: flex; }
+
 .description h5 a {
   color: #344563;
   font-size: 13px;
@@ -190,6 +190,7 @@ main {
   line-height: 16px;
   margin-right: 10px;
 }
+
 .description ul {
   display: flex;
   list-style-type: none;
@@ -197,6 +198,7 @@ main {
   width: 200px;
   margin-top: -5px;
 }
+
 .description a {
   text-decoration: none;
   font-size: 13px;
@@ -207,25 +209,30 @@ main {
   text-decoration: underline;
   text-decoration-color: #6070ff;
 }
+
 .text-sect {
   width: 295px;
   height: 76px;
 }
+
 .text-sect:hover {
   text-decoration: underline;
   text-decoration-color: #6070ff;
 }
+
 .text-description {
   color: #344563;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
 }
+
 .languages ul {
   display: flex;
   list-style-type: none;
   justify-content: space-between;
 }
+
 .languages a {
   text-decoration: none;
   font-size: 12px;
@@ -239,9 +246,8 @@ main {
   border-radius: 8px;
   padding: 4px 12px;
 }
-.languages li {
-  margin: 12px;
-}
+
+.languages li { margin: 12px; }
 
 .see_project {
   border: 1px solid #6070ff;
@@ -255,26 +261,22 @@ main {
   cursor: pointer;
   border-radius: 10px;
 }
+
 .see_project:hover {
   text-decoration: underline;
   text-decoration-color: #6070ff;
 }
-.project_multi-stories {
-  height: 596px;
-}
+
+.project_multi-stories { height: 596px; }
+
 .multi_stories {
   width: 295px;
   height: 80px;
 }
-a:hover {
-  text-decoration: underline;
-}
-.main-img:hover {
-  border: 1px #396df2 solid;
-}
-.project4 {
-  margin-bottom: 114px;
-}
+
+a:hover { text-decoration: underline; }
+.main-img:hover { border: 1px #396df2 solid; }
+.project4 { margin-bottom: 114px; }
 
 /************** 
   About 
@@ -292,17 +294,9 @@ a:hover {
   flex-direction: column;
 }
 
-.about {
-  margin-top: 114px;
-  
-}
-.about-intro {
-  height: 101px;
-  
-}
-.about-pitch {
-  margin-left: 24px;
-}
+.about { margin-top: 114px; }
+.about-intro { height: 101px; }
+.about-pitch { margin-left: 24px; }
 .about-connect a {
   margin-left: 24px;
   color: #7f8cff;
@@ -315,13 +309,14 @@ a:hover {
   text-decoration: none;
   width: 117px;
 }
-.about-connect a:hover {
-  text-decoration: underline;
-}
+
+.about-connect a:hover { text-decoration: underline; }
+
 .about > *:hover {
   text-decoration: underline;
   text-decoration-color: #6070ff;
 } 
+
 .about-contacts ul{
   display: flex;
   margin-top: 26px;
@@ -331,19 +326,20 @@ a:hover {
   list-style-type: none;
   align-items: baseline;
 }
-.about-btn {
-  margin: 80px 24px 50px;
-}
+
+.about-btn { margin: 80px 24px 50px; }
 
 .abilities-section {
   display: flex;
   flex-direction: column;
 }
+
 .abilities-intro {
   display: flex;
   margin-left: 36px;
   margin-right: 36px;
 }
+
 .abilities-intro:hover {
   text-decoration: underline;
   text-decoration-color: #6070ff;
@@ -354,15 +350,10 @@ a:hover {
   height: 24px;
   margin-right: 25px;
 }
-.frames {
-  margin-bottom: 48px;
-}
-.frames h4{
-  margin-right: 35px;
-}
-.skills h4 {
-  margin-right: 35px;
-}
+
+.frames { margin-bottom: 48px; }
+.frames h4{ margin-right: 35px; }
+.skills h4 { margin-right: 35px; }
 
 .abilities-section ul {
   display: flex;
@@ -370,6 +361,7 @@ a:hover {
   flex-direction: column;
   margin: 36px;
 }
+
 .abilities-section li {
   display: flex;
   align-items: center;
@@ -380,10 +372,10 @@ a:hover {
   border-radius: 8px;
   padding: 9px 0 9.72px 12px;
 }
+
 .abilities-section li:hover {
   text-decoration: underline;
   text-decoration-color: #6070ff;
 }
-.abilities-section img {
-  margin-right: 16px;
-}
+
+.abilities-section img { margin-right: 16px; }
