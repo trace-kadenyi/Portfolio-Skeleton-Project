@@ -136,7 +136,7 @@ main {
   height: 2788px;
   left: 0;
   top: 718px;
-  background: #E5E5E5;
+  background: #e5e5e5;
   background-color: #fff;
   margin: 0 auto 0;
 }
@@ -178,14 +178,6 @@ main {
 }
 
 .description { display: flex; }
-
-.description h5 a {
-  color: #344563;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 16px;
-  margin-right: 10px;
-}
 
 .description ul {
   display: flex;
@@ -284,6 +276,7 @@ a:hover { text-decoration: underline; }
 .about { margin-top: 114px; }
 .about-intro { height: 101px; }
 .about-pitch { margin-left: 24px; }
+
 .about-connect a {
   margin-left: 24px;
   color: #7f8cff;
@@ -303,6 +296,15 @@ a:hover { text-decoration: underline; }
 }
 
 .connect a:hover { text-decoration: underline; }
+
+.description h5 a {
+  color: #344563;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  margin-right: 10px;
+}
+
 .about-contacts ul{
   display: flex;
   margin-top: 26px;
@@ -365,10 +367,9 @@ a:hover { text-decoration: underline; }
 }
 
 .abilities-section img { margin-right: 16px; }
+.about-connect a:hover { text-decoration: underline; }
 
 .description li a:hover {
   text-decoration: underline;
   text-decoration-color: #6070ff;
 }
-
-.about-connect a:hover { text-decoration: underline; }
