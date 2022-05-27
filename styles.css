@@ -113,10 +113,6 @@ main {
   width: 117px;
 }
 
-.connect a:hover {
-  text-decoration: underline;
-}
-
 .contacts ul {
   display: flex;
   margin-left: 24px;
@@ -175,6 +171,8 @@ main {
   line-height: 44px;
   text-decoration: none;
 }
+
+.about-connect a:hover { text-decoration: underline; }
 
 .tonic:hover {
   text-decoration: underline;
@@ -310,13 +308,13 @@ a:hover { text-decoration: underline; }
   width: 117px;
 }
 
-.about-connect a:hover { text-decoration: underline; }
 
 .about > *:hover {
   text-decoration: underline;
   text-decoration-color: #6070ff;
 } 
 
+.connect a:hover { text-decoration: underline; }
 .about-contacts ul{
   display: flex;
   margin-top: 26px;
@@ -368,7 +366,7 @@ a:hover { text-decoration: underline; }
   width: 303px;
   height: 66.72px;
   margin-bottom: 33.72px;
-  background: #F7F7F9;
+  background: #f7f7f9;
   border-radius: 8px;
   padding: 9px 0 9.72px 12px;
 }
