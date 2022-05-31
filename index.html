@@ -320,13 +320,17 @@
           </div>
         </div>
       </section>
-      <hr class="line">
+      <hr class="line" />
 
       <!-- Contact Section -->
       <section class="contact-info">
         <div class="contacts-sect">
           <div class="img-container">
-            <img class="bg-image" src="images/bg-image.png" alt="contact-image" />
+            <img
+              class="bg-image"
+              src="images/bg-image.png"
+              alt="contact-image"
+            />
           </div>
           <div class="contacts-content">
             <div class="contact-intro">
@@ -340,10 +344,21 @@
               </p>
             </div>
             <div class="contact-form">
-              <form>
-                <input type="text" maxlength="30" placeholder="Tracey" required />
+              <form action="https://formspree.io/f/mrgjjjpg" method="post">
+                <label for="myName">Enter Your Name:</label>
+                <input
+                  type="text"
+                  maxlength="30"
+                  id="myName"
+                  name="myName"
+                  placeholder="Kadenyi"
+                  required
+                />
+                <label for="email">Enter Your Email:</label>
                 <input
                   type="email"
+                  name="email"
+                  id="email"
                   placeholder="treykadenyi@gmail.com"
                   required
                 />
@@ -351,17 +366,17 @@
                   rows="5"
                   cols="10"
                   maxlength="500"
+                  name="message"
                   placeholder="Write your message here"
+                  required
                 ></textarea>
+                <button class="touch" type="submit">Get In Touch</button>
               </form>
             </div>
-            <div class="get-in-touch">
-              <ul>
-                <li class="touch"><a href="#">Get In Touch</a></li>
-              </ul>
-            </div>
           </div>
-          
+          <div>
+            <img class="dash" src="images/dash_contact-icon.png" alt="dash" />
+          </div>
         </div>
       </section>
     </main>
