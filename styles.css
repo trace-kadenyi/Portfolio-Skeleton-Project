@@ -493,3 +493,22 @@ a:hover { text-decoration: underline; }
   text-decoration: none;
   padding: 12px 16px;
 }
+
+.contact-intro h2:hover {
+  text-decoration: underline;
+  text-decoration-color:#396df2;
+}
+.contact-intro p:hover {
+  text-decoration: underline;
+  text-decoration-color:#396df2;
+}
+
+.contact-form input:hover {
+  text-decoration: underline;
+  text-decoration-color:#396df2;
+}
+
+textarea:hover {
+  text-decoration: underline;
+  text-decoration-color:#396df2;
+}
