@@ -82,7 +82,7 @@
               <h2><a href="#" class="tonic">Tonic</a></h2>
             </div>
             <div class="description">
-              <h5><a href="#">CANOPY</a></h5>
+              <h5 class="descript"><a href="#">CANOPY</a></h5>
               <ul>
                 <li>
                   <a href="#"><img src="images/circle.svg" alt="circle" /></a>
@@ -127,7 +127,7 @@
               </h2>
             </div>
             <div class="description">
-              <h5><a href="#">CANOPY</a></h5>
+              <h5 class="descript"><a href="#">CANOPY</a></h5>
               <ul>
                 <li>
                   <a href="#"><img src="images/circle.svg" alt="circle" /></a>
@@ -167,7 +167,7 @@
               <h2><a href="#" class="tonic">Tonic</a></h2>
             </div>
             <div class="description">
-              <h5><a href="#">CANOPY</a></h5>
+              <h5 class="descript"><a href="#">CANOPY</a></h5>
               <ul>
                 <li>
                   <a href="#"><img src="images/circle.svg" alt="circle" /></a>
@@ -212,7 +212,7 @@
               </h2>
             </div>
             <div class="description">
-              <h5><a href="#">CANOPY</a></h5>
+              <h5 class="descript"><a href="#">CANOPY</a></h5>
               <ul>
                 <li>
                   <a href="#"><img src="images/circle.svg" alt="circle" /></a>
@@ -246,18 +246,18 @@
 
       <!-- About Section -->
       <section class="about-sect">
-          <div class="about">
-            <h2 class="about-intro intro">About <br>Myself</h2>
-            <p class="about-pitch pitch">
-              I'm a software developer! I can help you build a product,
-              feature or website. Look through some of my work and experience!
-              If you like what you see and have a project you need coded,
-              don't hesitate to contact me.
-            </p>
-          </div>
-          <div class="about-connect">
-            <h3><a href="#">LET'S CONNECT</a></h3>
-          </div>
+        <div class="about">
+          <h2 class="about-intro intro">About <br />Myself</h2>
+          <p class="about-pitch pitch">
+            I'm a software developer! I can help you build a product, feature or
+            website. Look through some of my work and experience! If you like
+            what you see and have a project you need coded, don't hesitate to
+            contact me.
+          </p>
+        </div>
+        <div class="about-connect">
+          <h3><a href="#">LET'S CONNECT</a></h3>
+        </div>
         <div class="about-contacts">
           <ul>
             <li>
@@ -265,7 +265,7 @@
                 ><img class="first" src="images/cartoon.svg" alt="cartoon"
               /></a>
             </li>
-            
+
             <li>
               <a href="#"
                 ><img class="second" src="images/the-i.svg" alt="letter_i"
@@ -299,26 +299,85 @@
         <div class="abilities-section">
           <div class="abilities-intro">
             <h4>Languages</h4>
-            <img src="images/down-icon.png" alt="icon">
+            <img src="images/down-icon.png" alt="icon" />
           </div>
           <ul>
-            <li><img src="images/js-icon.png" alt="js">JavaScript</li>
-            <li><img src="images/html-icon.png" alt="js">HTML</li>
-            <li><img src="images/css-icon.png" alt="js">CSS</li>
+            <li><img src="images/js-icon.png" alt="js" />JavaScript</li>
+            <li><img src="images/html-icon.png" alt="js" />HTML</li>
+            <li><img src="images/css-icon.png" alt="js" />CSS</li>
           </ul>
         </div>
-          <div class="abilities-section">
-            <div class="frames abilities-intro">
-              <h4>Frameworks</h4>
-              <img src="images/side-icon.png" alt="icon">
-            </div>
+        <div class="abilities-section">
+          <div class="frames abilities-intro">
+            <h4>Frameworks</h4>
+            <img src="images/side-icon.png" alt="icon" />
+          </div>
           <div class="abilities-section">
             <div class="skills abilities-intro">
               <h4>Skills</h4>
-              <img src="images/side-icon.png" alt="icon">
+              <img src="images/side-icon.png" alt="icon" />
             </div>
+          </div>
         </div>
-      </div>
+      </section>
+      <hr class="line" />
+
+      <!-- Contact Section -->
+      <section class="contact-info">
+        <div class="contacts-sect">
+          <div class="img-container">
+            <img
+              class="bg-image"
+              src="images/bg-image.png"
+              alt="contact-image"
+            />
+          </div>
+          <div class="contacts-content">
+            <div class="contact-intro">
+              <h2>Contact me</h2>
+              <p class="pitch">
+                If you have an application you <br />
+                are interested in developing, a <br />
+                feature that you need built or a <br />
+                project that needs coding, I'd <br />
+                love to help with it
+              </p>
+            </div>
+            <div class="contact-form">
+              <form action="https://formspree.io/f/mrgjjjpg" method="post">
+                <label for="myName">Enter Your Name:</label>
+                <input
+                  type="text"
+                  maxlength="30"
+                  id="myName"
+                  name="myName"
+                  placeholder="Kadenyi"
+                  required
+                />
+                <label for="email">Enter Your Email:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="treykadenyi@gmail.com"
+                  required
+                />
+                <textarea
+                  rows="5"
+                  cols="10"
+                  maxlength="500"
+                  name="message"
+                  placeholder="Write your message here"
+                  required
+                ></textarea>
+                <button class="touch" type="submit">Get In Touch</button>
+              </form>
+            </div>
+          </div>
+          <div>
+            <img class="dash" src="images/dash_contact-icon.png" alt="dash" />
+          </div>
+        </div>
       </section>
     </main>
   </body>
