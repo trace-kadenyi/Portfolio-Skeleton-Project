@@ -267,7 +267,7 @@ a:hover { text-decoration: underline; }
   left: 0;
   background: #e5e5e5;
   background-color: #fff;
-  margin: 0 auto 50px;
+  margin: 0 auto;
   border-top-right-radius: 75px;
   display: flex;
   flex-direction: column;
@@ -295,7 +295,7 @@ a:hover { text-decoration: underline; }
   text-decoration-color: #6070ff;
 }
 
-.description h5 a {
+.descript {
   color: #344563;
   font-size: 13px;
   font-weight: 600;
@@ -343,6 +343,7 @@ a:hover { text-decoration: underline; }
 .frames h4 { margin-right: 35px; }
 .skills h4 { margin-right: 35px; }
 
+
 .abilities-section ul {
   display: flex;
   list-style-type: none;
@@ -374,44 +375,82 @@ a:hover { text-decoration: underline; }
   text-decoration-color: #6070ff;
 }
 
+.line:hover {
+  text-decoration: underline;
+  text-decoration-color: #6070ff;
+}
+
 .contact-info {
   width: 375px;
-  height: 779px;
+  height: 1002px;
   display: flex;
   flex-direction: column;
+  background: #fff;
+  margin-bottom: 50px;
+}
+
+.contacts-sect {
   background: #6070ff;
+  height: 900px;
   border-top-left-radius: 120px;
+  margin-top: 103px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts-sect img {
+  margin-top: 50px;
+  width: 375px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-intro {
+  position: absolute;
+  top: 4940px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 87px;
-  margin-top: 103px;
+  margin-bottom: 67px;
 }
 
 .contact-intro h2 {
   text-align: center;
   margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
 }
 
-.contact-intro p {
+.contact-intro .pitch {
   width: 327px;
   height: 102px;
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
+  margin-left: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
 }
 
 .contact-form {
   margin: 24px;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  top: 5150px;
 }
 
 .contact-form input {
-  width: 327px;
-  height: 48px;
+  display: flex;
+  flex-direction: column;
+  width: 307px;
+  height: 38px;
   margin-bottom: 20px;
   background: #fff;
   border: 1px solid #cfd8dc;
@@ -424,7 +463,7 @@ a:hover { text-decoration: underline; }
 }
 
 .contact-form textarea {
-  width: 327px;
+  width: 307px;
   height: 170px;
   font-weight: 400;
   font-size: 15px;
@@ -433,20 +472,24 @@ a:hover { text-decoration: underline; }
   padding: 7px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
+  margin-right: 24px;
 }
 
-.get-in-touch ul {
-  list-style-type: none;
-}
+.get-in-touch ul { list-style-type: none; }
 
-.get-in-touch a {
-  text-decoration: none;
-  margin: 10px;
-  margin-top: 100px;
-  border: 1px red solid;
-  padding: 12px 16px;
+.touch {
+  position: absolute;
+  top: 5550px;
+  display: flex;
+  justify-content: center;
   width: 140px;
   height: 48px;
   border-radius: 7px;
   margin-left: 24px;
+  background: white;
+}
+
+.touch a {
+  text-decoration: none;
+  padding: 12px 16px;
 }
