@@ -373,3 +373,62 @@ a:hover { text-decoration: underline; }
   text-decoration: underline;
   text-decoration-color: #6070ff;
 }
+
+.contact-info {
+  width: 375px;
+  height: 779px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-intro {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 87px;
+  margin-top: 103px;
+}
+
+.contact-intro h2 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.contact-intro p {
+  width: 327px;
+  height: 102px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.contact-form {
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input {
+  width: 327px;
+  height: 48px;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+  padding: 7px;
+}
+
+.contact-form textarea {
+  width: 327px;
+  height: 170px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+  padding: 7px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+}
