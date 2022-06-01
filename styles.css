@@ -21,10 +21,15 @@ main {
   height: 718px;
   left: 0;
   top: 0;
+  background: url("images/headline.png");
   background-color: #fff;
   margin: 20px auto 0;
   border-bottom-left-radius: 75px;
+  background-size: 100% 587.15px;
+  background-repeat: no-repeat;
+  background-position: right 104px;
 }
+.desktop-container { display: none; }
 
 .header {
   display: flex;
@@ -50,12 +55,6 @@ main {
 .logo:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
-}
-
-.headline img {
-  width: 100%;
-  height: 587.15px;
-  top: 104px;
 }
 
 .main {
@@ -99,6 +98,9 @@ main {
   top: 368px;
 }
 
+.breaker { display: none; }
+.tablet-break { display: none; }
+
 .connect a {
   color: #7f8cff;
   margin-left: 24px;
@@ -111,6 +113,7 @@ main {
   top: 546px;
   text-decoration: none;
   width: 117px;
+  line-height: 24px;
 }
 
 .contacts ul {
@@ -536,4 +539,110 @@ textarea:hover {
 .dash {
   display: flex;
   margin: 10px auto 0;
+}
+
+/*************
+Desktop Version
+*************/
+@media screen and (min-width: 768px) {
+  main { width: 90%; }
+
+  .mobile-skeleton {
+    width: 100%;
+    height: 616px;
+    background: url("images/desktop-header.png");
+    background-color: #fff;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-position: right 104px;
+  }
+  .header-container {
+    display: none;
+  }
+  .header {
+    height: 100px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .desktop-container {
+    display: flex;
+    margin-right: 80px;
+  }
+
+  .desktop-container { list-style-type: none; }
+  .desktop-container a { text-decoration: none; }
+  .desktop-container a:hover {
+    text-decoration: underline;
+    text-decoration-color: #396df2;
+    text-decoration-thickness: 2px;
+  }
+  .desktop-container li {
+    margin: 32px;
+    color: #344563;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    height: 20px;
+  }
+
+  .main {
+    position: absolute;
+    width: 62%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 12.9%;
+    margin-right: 12.9%;
+  }  
+
+  .main > * {
+    display: flex;
+    height: 150px;
+    align-items: center;
+    margin: 0 24px;
+    margin-bottom: 30px;
+  }
+  
+  .intro {
+    width: 97.5%;
+    height: 98px;
+    font-size: 48px;
+    color: #091e42;
+    line-height: 60px;
+    margin-bottom: 8px;
+   }
+
+  .breaker { display: none; }
+  .mobile-break { display: none; }
+
+  .pitch {
+    width: 97.5%;
+    height: 98px;
+    line-height: 28px;
+  }
+
+  .connect a {
+    color: #7f8cff;
+    margin-top: -100px;
+    margin-left: 13.8%;
+  }
+
+  .contacts ul {
+    margin-top: -100px;
+    margin-left: 12.9%;
+  }
+  
+}
+
+
+
+  
+
+@media screen and (min-width: 1024px) {
+.mobile-skeleton {
+  height: 766px;
+}
 }
