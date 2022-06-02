@@ -88,6 +88,8 @@ main {
   margin: 24px;
 }
 
+.desktop-pitch { display: none; }
+
 .pitch {
   font-weight: 400;
   font-size: 16px;
@@ -136,16 +138,14 @@ main {
 
 .works-sect {
   width: 375px;
-  height: 2788px;
+  max-height: 2788px;
   left: 0;
   top: 718px;
   background: #e5e5e5;
   background-color: #fff;
   margin: 0 auto 0;
 }
-.desktop-img {
-  display: none;
-}
+.desktop-img { display: none; }
 
 .project1 { margin-top: 114px; }
 
@@ -212,12 +212,9 @@ main {
   text-decoration: underline;
   text-decoration-color: #6070ff;
 }
-.desktop-description {
-  display: none;
-}
-.desktop-year {
-  display: none;
-}
+
+.desktop-description { display: none; }
+.desktop-year { display: none; }
 
 .text-description {
   color: #344563;
@@ -225,18 +222,15 @@ main {
   font-weight: 400;
   line-height: 24px;
 }
-.languages {
-  margin-left: 24px;
-}
+.languages { margin-left: 24px; }
+
 .languages ul {
   display: flex;
   width: 200px;
   list-style-type: none;
   justify-content: space-around;
 }
-.ruby {
-  display: none;
-}
+.ruby { display: none; }
 
 .languages a {
   text-decoration: none;
@@ -419,6 +413,7 @@ a:hover { text-decoration: underline; }
   border-top-left-radius: 120px;
   margin-top: 103px;
 }
+.desktop-bg-image { display: none; }
 
 .bg-image {
   margin-top: 50px;
@@ -566,7 +561,7 @@ textarea:hover {
 }
 
 /*************
-Desktop Version
+DESKTOP VERSION
 *************/
 @media screen and (min-width: 768px) {
   main { width: 90%; }
@@ -603,12 +598,6 @@ Desktop Version
     color: #7f8cff;
     margin-top: -100px;
     margin-left: 13.8%;
-  }
-
-  .desktop-container a:hover {
-    text-decoration: underline;
-    text-decoration-color: #396df2;
-    text-decoration-thickness: 2px;
   }
 
   .desktop-container li {
@@ -668,9 +657,7 @@ Desktop Version
 
   .works-sect {
     width: 100%;
-    max-height: 2070px;
     background-color: #fff;
-    
   }
 
   .projects {
@@ -737,6 +724,8 @@ Desktop Version
     font-size: 17px;
   }
 
+  .languages a { font-size: 10px; }
+
   .languages ul {
     width: 10%;
     display: flex;
@@ -747,7 +736,8 @@ Desktop Version
 
   .ruby {
     display: flex;
-    flex-grow: 2;
+    width: 100px;
+    justify-content: center;
   }
 
   .desktop-description {
@@ -758,6 +748,12 @@ Desktop Version
     line-height: 24px;
     height: 70px;
     width: 350px;
+  }
+
+  .desktop-container a:hover {
+    text-decoration: underline;
+    text-decoration-color: #396df2;
+    text-decoration-thickness: 2px;
   }
 
   /*************
@@ -772,12 +768,16 @@ Desktop Version
     margin-right: 10px;
   }
 
+  .project3 .ruby {
+    display: block;
+    text-align: center;
+  }
+
   .project3 .description { width: 400px; }
   .project3 .descript { display: none; }
   .project_multi-stories .descript { display: none; }
-  .project3 .ruby { display: block; }
   .project3 .tonic { display: none; }
-  
+
   .project3 .desktop-head {
     display: block;
     margin-bottom: 15px;
@@ -798,7 +798,7 @@ Desktop Version
     margin-left: -30px;
   }
 
- .project3 .mobile-dev { display: none; }
+  .project3 .mobile-dev { display: none; }
   .project3 .desktop-description { width: 90%; }
 
   .project3 .languages {
@@ -851,11 +851,6 @@ Desktop Version
     width: 90%;
   }
 
-  .project_multi-stories .languages ul {
-    margin-top: 10px;
-    margin-left: -10px;
-  }
-
   .project_multi-stories .article-one {
     width: 50%;
     margin-right: 10px;
@@ -864,7 +859,8 @@ Desktop Version
   .project_multi-stories .article-two {
     width: 50%;
     right: 0;
-}
+  }
+
   .project_multi-stories .see_project { margin-top: -2px; }
   .project_multi-stories .languages { margin-left: 0; }
 
@@ -881,10 +877,10 @@ Desktop Version
     ABOUT SECTION
   *************/
 
-  .about-sect { 
+  .about-sect {
     width: 100%;
     max-height: 850px;
-   }
+  }
 
   .about-articles {
     display: flex;
@@ -898,15 +894,16 @@ Desktop Version
     justify-content: space-between;
     width: 40%;
     margin-left: 70px;
+    margin-top: -100px;
   }
 
   .about-article-two {
     width: 60%;
-    margin-top: 130px;
+    margin-top: 50px;
   }
 
   .about-intro { margin-bottom: 20px; }
-    .about-connect { margin-top: 100px; }
+  .about-connect { margin-top: 100px; }
 
   .abilities-section ul {
     flex-direction: row;
@@ -916,6 +913,11 @@ Desktop Version
   .about-pitch {
     margin-bottom: 20px;
     font-size: 13px;
+  }
+
+  .project_multi-stories .languages ul {
+    margin-top: 10px;
+    margin-left: -10px;
   }
 
   .about-list {
@@ -932,19 +934,64 @@ Desktop Version
 
   .abilities-intro h4 { width: 337px; }
 
+  /*************
+  CONTACT SECTION
+  *************/
 
+  .contact-info {
+    position: relative;
+    width: 100%;
+    max-height: 846px;
+  }
+  .contacts-sect { margin-top: 0; }
+  .bg-image { display: none; }
 
+  .desktop-bg-image {
+    display: block;
+    top: 142px;
+    margin: auto;
+    margin-top: 142px;
+    width: 90%;
+  }
 
+  .contact-intro { top: 180px; }
+  .contact-form { top: 340px; }
 
+  .contacts-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .desktop-pitch {
+    display: block;
+    max-width: 569px;
+    height: 102px;
+  }
+
+  .mobile-pitch { display: none; }
+
+  .contact-intro .desktop-pitch {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #ebebff;
+  }
+
+  .contact-form input { width: 333px; }
+  .contact-form textarea { width: 333px; }
+
+  .touch {
+    width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .dash { display: none; }
 }
-
-
-
-
-
-
-
 
 @media screen and (min-width: 992px) {
   .desktop-description { margin-top: -15px; }
@@ -957,17 +1004,15 @@ Desktop Version
   .project_multi-stories .desktop-img { width: 400px; }
   .about-pitch { font-size: 16px; }
   .about-connect { margin-top: 70px; }
-}  
-
+}
 
 @media screen and (min-width: 1200px) {
   .mobile-skeleton { height: 766px; }
-  .works-sect { max-height: 2452px; }
 
   .oneProject {
     max-width: 1156px;
-    max-height: 496px;
   }
+  .see_project { margin-top: 10px; }
 
   .article-two {
     width: 50%;
@@ -1000,7 +1045,6 @@ Desktop Version
   }
 
   .project4 .see_project { margin-top: 10px; }
-  .languages a { font-size: 10px; }
   .project_multi-stories .see_project { margin-top: 15px; }
   .project4 .languages { margin-top: -40px; }
 
@@ -1012,10 +1056,8 @@ Desktop Version
   .multi_stories .desktop-description { margin-top: 20px; }
 
   .text-description { width: 400px; }
-  .see_project { margin-top: 10px; }
-  .about-sect {
-    max-height: 700px;
-  }
+  .about-sect { max-height: 700px; }
+
   .about-article-one {
     display: flex;
     flex-direction: column;
@@ -1045,11 +1087,6 @@ Desktop Version
 
   .abilities-intro h4 { width: 437px; }
   .about-pitch { font-size: 16px; }
-
-
-
-
-
-
-
+  .contact-form input { width: 393px; }
+  .contact-form textarea { width: 393px; }
 }
