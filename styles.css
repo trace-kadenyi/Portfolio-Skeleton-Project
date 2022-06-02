@@ -11,19 +11,19 @@ body {
 }
 
 main {
-  width: 375px;
+  width: 100%;
   margin: auto;
   background: #f7f7f9;
 }
 
 .mobile-skeleton {
-  width: 375px;
+  max-width: 540px;
   height: 718px;
   left: 0;
   top: 0;
   background: url("images/headline.png");
   background-color: #fff;
-  margin: 20px auto 0;
+  margin: 20 auto 0;
   border-bottom-left-radius: 75px;
   background-size: 100% 587.15px;
   background-repeat: no-repeat;
@@ -56,6 +56,7 @@ main {
   text-decoration: underline;
   text-decoration-thickness: 2px;
 }
+
 
 .main {
   position: absolute;
@@ -137,10 +138,8 @@ main {
 **************/
 
 .works-sect {
-  width: 375px;
-  max-height: 2788px;
+  max-width: 540px;
   left: 0;
-  top: 718px;
   background: #e5e5e5;
   background-color: #fff;
   margin: 0 auto 0;
@@ -160,8 +159,6 @@ main {
   box-sizing: border-box;
   padding: 16px;
   gap: 12px;
-  width: 327px;
-  height: 552px;
   background-color: #fff;
   margin-bottom: 88px;
   border: 1px solid #dfe1e6;
@@ -221,20 +218,22 @@ main {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
+  margin-top: 14px;
 }
 .languages { margin-left: 24px; }
 
 .languages ul {
   display: flex;
-  width: 200px;
+  width: 150px;
   list-style-type: none;
   justify-content: space-around;
 }
+
 .ruby { display: none; }
 
 .languages a {
   text-decoration: none;
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: 0.03em;
   line-height: 16px;
   font-weight: 500;
@@ -243,9 +242,14 @@ main {
   background: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
+  margin-right: 6px;
 }
 
-.languages li { margin: 12px; }
+.article-two h2 {
+  margin-top: 20px;
+}
+
+
 
 .see_project {
   border: 1px solid #6070ff;
@@ -258,6 +262,8 @@ main {
   font-size: 17px;
   cursor: pointer;
   border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .see_project:hover {
@@ -265,20 +271,17 @@ main {
   text-decoration-color: #6070ff;
 }
 
-.project_multi-stories { height: 596px; }
-
-.multi_stories {
+/* .multi_stories {
   width: 295px;
   height: 80px;
-}
+} */
 
 a:hover { text-decoration: underline; }
 .main-img:hover { border: 1px #396df2 solid; }
 .project4 { margin-bottom: 114px; }
 
 .about-sect {
-  width: 375px;
-  height: 1165px;
+  max-width: 540px;
   left: 0;
   background: #e5e5e5;
   background-color: #fff;
@@ -392,6 +395,13 @@ a:hover { text-decoration: underline; }
   text-decoration: underline;
   text-decoration-color: #6070ff;
 }
+button:hover {
+  background: #6070FF;
+  color: #fff;
+}
+button:active {
+  background: #2230D2;
+}
 
 .line:hover {
   text-decoration: underline;
@@ -399,31 +409,30 @@ a:hover { text-decoration: underline; }
 }
 
 .contact-info {
-  width: 375px;
-  height: 1002px;
+  max-width: 540px;
   display: flex;
   flex-direction: column;
   background: #fff;
-  margin-bottom: 50px;
 }
 
 .contacts-sect {
+  position: relative;
   background: #6070ff;
-  height: 900px;
   border-top-left-radius: 120px;
   margin-top: 103px;
 }
+
 .desktop-bg-image { display: none; }
 
 .bg-image {
   margin-top: 50px;
-  width: 375px;
-  height: 800px;
+  width: 100%;
+  height: 900px;
 }
 
 .contact-intro {
   position: absolute;
-  top: 4940px;
+  top: 225px;
   display: flex;
   flex-direction: column;
   margin-bottom: 67px;
@@ -455,6 +464,8 @@ a:hover { text-decoration: underline; }
 form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-form {
@@ -462,19 +473,19 @@ form {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 5150px;
+  top: 500px;
 }
 
 label {
-  position: absolute;
-  left: -99999px;
+  display: none;
 }
 
 .contact-form input {
   display: flex;
   flex-direction: column;
-  width: 307px;
-  height: 38px;
+  margin: auto;
+  min-width: 290px;
+  max-height: 38px;
   margin-bottom: 20px;
   background: #fff;
   border: 1px solid #cfd8dc;
@@ -492,8 +503,10 @@ input:focus {
 }
 
 .contact-form textarea {
-  width: 307px;
+  min-width: 290px;
   height: 170px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -501,7 +514,6 @@ input:focus {
   padding: 7px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  margin-right: 24px;
 }
 
 .touch {
@@ -560,15 +572,85 @@ textarea:hover {
   margin: 10px auto 0;
 }
 
+@media screen and (min-width: 540px) and (max-width: 780px) {
+  .mobile-skeleton {
+    max-width: 100%;
+  }
+  .mobile-break { display: none; }
+  .works-sect { max-width: 100%; }
+  .about-sect { max-width: 100%; }
+  .contact-info { max-width: 100%; }
+  .project2 { max-width: 100%; }
+  .main-img { display: none; }
+
+  .desktop-img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .article-two .languages {
+    margin-top: -20px;
+  }
+ 
+
+  .text-description {
+    width: 400px;
+  }
+
+
+
+  .description { margin-top: 20px; }
+  .text-sect { margin-top: 20px; }
+
+  .about-sect {
+    width: 100%;
+    margin: 0;
+  }
+
+  .about-pitch {
+    min-width: 500px;
+    font-size: 18px;
+    /* border: 1px red solid; */
+  }
+
+  .mini-break { display: none; }
+
+  .about-connect a { margin-top: 10px; }
+
+  .about-contacts {
+    margin-top: 20px;
+    margin-left: -10px;
+  }
+  
+  .abilities-section li {
+    min-width: 450px;
+  }
+  .abilities-intro h4 { min-width: 430px; }
+
+
+  .bg-image { min-height: 1100px; }
+  .contact-info { width: 100%; }
+
+  .contact-intro {
+    top: 350px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .contact-form {
+    top: 600px;
+    margin-left: 100px;
+  }
+}
+
 /*************
 DESKTOP VERSION
 *************/
 @media screen and (min-width: 768px) {
-  main { width: 90%; }
+  main { width: 100%; }
 
   .mobile-skeleton {
-    width: 100%;
-    height: 616px;
+    max-width: 100%;
     background: url("images/desktop-header.png");
     background-color: #fff;
     background-size: 100%;
@@ -656,11 +738,12 @@ DESKTOP VERSION
 *************/
 
   .works-sect {
-    width: 100%;
+    max-width: 100%;
     background-color: #fff;
   }
 
   .projects {
+    min-width: 90%;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -699,10 +782,12 @@ DESKTOP VERSION
 
   .desktop-img {
     display: block;
-    width: 260px;
-    height: 260px;
+    max-width: 100%;
     margin-left: -10px;
   }
+  /* .project1 .desktop-img {
+    max-width: 100%;
+  } */
 
   .desktop-head:hover {
     text-decoration: underline;
@@ -724,8 +809,7 @@ DESKTOP VERSION
     font-size: 17px;
   }
 
-  .languages a { font-size: 10px; }
-
+  .languages li { margin: 12px; }
   .languages ul {
     width: 10%;
     display: flex;
@@ -786,11 +870,6 @@ DESKTOP VERSION
     font-size: 32px;
     line-height: 44px;
     text-decoration: none;
-  }
-
-  .project3 .see_project {
-    background: #4053fc;
-    color: white;
   }
 
   .project3 .desktop-dev {
@@ -878,8 +957,8 @@ DESKTOP VERSION
   *************/
 
   .about-sect {
-    width: 100%;
-    max-height: 850px;
+    max-width: 100%;
+    /* max-height: 850px; */
   }
 
   .about-articles {
@@ -940,15 +1019,14 @@ DESKTOP VERSION
 
   .contact-info {
     position: relative;
-    width: 100%;
-    max-height: 846px;
+    max-width: 100%;
   }
   .contacts-sect { margin-top: 0; }
   .bg-image { display: none; }
 
   .desktop-bg-image {
     display: block;
-    top: 142px;
+    height: 650px;
     margin: auto;
     margin-top: 142px;
     width: 90%;
@@ -963,6 +1041,8 @@ DESKTOP VERSION
     justify-content: center;
     align-items: center;
   }
+  .project_multi-stories .desktop-img { width: 400px; }
+  .project3 .desktop-img { width: 400px; }
 
   .desktop-pitch {
     display: block;
@@ -1007,8 +1087,6 @@ DESKTOP VERSION
 }
 
 @media screen and (min-width: 1200px) {
-  .mobile-skeleton { height: 766px; }
-
   .oneProject {
     max-width: 1156px;
   }
@@ -1028,7 +1106,7 @@ DESKTOP VERSION
     margin-left: 0;
   }
 
-  .project_multi-stories .desktop-img { width: 400px; }
+  /* .project_multi-stories .desktop-img { width: 400px; } */
   .project_multi-stories .desktop-description { width: 450px; }
   .project2 .languages { margin-top: -40px; }
   .project_multi-stories .languages { margin-left: 0; }
@@ -1056,7 +1134,6 @@ DESKTOP VERSION
   .multi_stories .desktop-description { margin-top: 20px; }
 
   .text-description { width: 400px; }
-  .about-sect { max-height: 700px; }
 
   .about-article-one {
     display: flex;
@@ -1064,25 +1141,25 @@ DESKTOP VERSION
     justify-content: center;
     align-items: center;
     margin-left: 100px;
-    max-height: 126px;
-    margin-top: 130px;
+    /* max-height: 126px; */
+    /* margin-top: 130px; */
   }
 
   .about-article-two { margin-top: 70px; }
 
   .about-connect {
     margin-top: 40px;
-    margin-left: -400px;
+    margin-left: -450px;
   }
 
   .about-contacts ul {
     margin-top: 30px;
-    margin-left: -180px;
+    margin-left: -210px;
   }
 
   .about-btn {
     margin-top: 80px;
-    margin-left: -180px;
+    margin-left: -210px;
   }
 
   .abilities-intro h4 { width: 437px; }
