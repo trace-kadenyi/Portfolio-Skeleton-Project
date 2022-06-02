@@ -663,18 +663,21 @@ Desktop Version
   }
 
   /*************
-  Works Section
+  WORKS SECTION
 *************/
 
   .works-sect {
     width: 100%;
-    height: 2552px;
+    max-height: 2070px;
+    background-color: #fff;
+    
   }
 
   .projects {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    margin-bottom: 0;
   }
 
   .oneProject {
@@ -874,6 +877,65 @@ Desktop Version
     width: 250px;
   }
 
+  /*************
+    ABOUT SECTION
+  *************/
+
+  .about-sect { 
+    width: 100%;
+    max-height: 850px;
+   }
+
+  .about-articles {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 142px;
+  }
+
+  .about-article-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    margin-left: 70px;
+  }
+
+  .about-article-two {
+    width: 60%;
+    margin-top: 130px;
+  }
+
+  .about-intro { margin-bottom: 20px; }
+    .about-connect { margin-top: 100px; }
+
+  .abilities-section ul {
+    flex-direction: row;
+    width: 122px;
+  }
+
+  .about-pitch {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+
+  .about-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+  }
+
+  .about-list img {
+    margin-top: -10px;
+    padding: 7px;
+  }
+
+  .abilities-intro h4 { width: 337px; }
+
+
+
+
+
 
 }
 
@@ -882,7 +944,9 @@ Desktop Version
 
 
 
-@media screen and (min-width: 1024px) {
+
+
+@media screen and (min-width: 992px) {
   .desktop-description { margin-top: -15px; }
   .project_multi-stories .desktop-description { width: 300px; }
 
@@ -891,12 +955,14 @@ Desktop Version
     margin-top: 10px;
   }
   .project_multi-stories .desktop-img { width: 400px; }
-
+  .about-pitch { font-size: 16px; }
+  .about-connect { margin-top: 70px; }
 }  
 
 
 @media screen and (min-width: 1200px) {
   .mobile-skeleton { height: 766px; }
+  .works-sect { max-height: 2452px; }
 
   .oneProject {
     max-width: 1156px;
@@ -935,8 +1001,9 @@ Desktop Version
 
   .project4 .see_project { margin-top: 10px; }
   .languages a { font-size: 10px; }
-  .project_multi-stories .see_project { margin-top: 15x; }
+  .project_multi-stories .see_project { margin-top: 15px; }
   .project4 .languages { margin-top: -40px; }
+
   .project1 .languages {
     margin-top: -30px;
     margin-left: -15px;
@@ -946,5 +1013,43 @@ Desktop Version
 
   .text-description { width: 400px; }
   .see_project { margin-top: 10px; }
+  .about-sect {
+    max-height: 700px;
+  }
+  .about-article-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    max-height: 126px;
+    margin-top: 130px;
+  }
+
+  .about-article-two { margin-top: 70px; }
+
+  .about-connect {
+    margin-top: 40px;
+    margin-left: -400px;
+  }
+
+  .about-contacts ul {
+    margin-top: 30px;
+    margin-left: -180px;
+  }
+
+  .about-btn {
+    margin-top: 80px;
+    margin-left: -180px;
+  }
+
+  .abilities-intro h4 { width: 437px; }
+  .about-pitch { font-size: 16px; }
+
+
+
+
+
+
 
 }
