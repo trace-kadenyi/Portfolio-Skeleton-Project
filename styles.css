@@ -390,9 +390,15 @@ a:hover { text-decoration: underline; }
   text-decoration-color: #6070ff;
 }
 
+button {
+  transition: width 2s height 2s ease-in;
+}
+
 button:hover {
   background: #6070ff;
   color: #fff;
+  width: 200px;
+  height: 50px;
 }
 
 button:active {
@@ -995,6 +1001,7 @@ DESKTOP VERSION
     height: 300px;
     width: 400px;
   }
+
   .oneProject .desktop-img {
     transition: width 2s, height 2s;
   }
@@ -1003,6 +1010,7 @@ DESKTOP VERSION
     width: 420px;
     height: 320px;
   }
+
   /*************
     ABOUT SECTION
   *************/
@@ -1264,9 +1272,8 @@ DESKTOP VERSION
     transition: width 2s, height 2s;
   }
 
-  
-.oneProject .desktop-img:hover {
-  width: 520px;
-  height: 420px;
-}
+  .oneProject .desktop-img:hover {
+    width: 520px;
+    height: 420px;
+  }
 }
