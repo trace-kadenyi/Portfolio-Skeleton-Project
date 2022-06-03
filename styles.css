@@ -50,11 +50,13 @@ main {
   font-size: 18px;
   line-height: 20px;
   margin: 24px;
+  transition: transform 2s;
 }
 
 .logo:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
+  transform: rotate(360deg);
 }
 
 .main {
@@ -270,7 +272,6 @@ main {
 }
 
 a:hover { text-decoration: underline; }
-.main-img:hover { border: 1px #396df2 solid; }
 .project4 { margin-bottom: 114px; }
 
 .about-sect {
@@ -389,9 +390,15 @@ a:hover { text-decoration: underline; }
   text-decoration-color: #6070ff;
 }
 
+button {
+  transition: width 2s height 2s ease-in;
+}
+
 button:hover {
   background: #6070ff;
   color: #fff;
+  width: 200px;
+  height: 50px;
 }
 
 button:active {
@@ -418,6 +425,15 @@ button:active {
 }
 
 .desktop-bg-image { display: none; }
+
+.oneProject .main-img {
+  transition: width 2s, height 2s;
+}
+
+.oneProject .main-img:hover {
+  width: 330px;
+  height: 220px;
+}
 
 .bg-image {
   margin-top: 50px;
@@ -628,6 +644,14 @@ textarea:hover {
   .contact-form {
     top: 600px;
     margin-left: 150px;
+  }
+
+  .oneProject .desktop-img {
+    transition: width 2s ease-in;
+  }
+
+  .oneProject .desktop-img:hover {
+    width: 90%;
   }
 }
 
@@ -978,6 +1002,15 @@ DESKTOP VERSION
     width: 400px;
   }
 
+  .oneProject .desktop-img {
+    transition: width 2s, height 2s;
+  }
+
+  .oneProject .desktop-img:hover {
+    width: 420px;
+    height: 320px;
+  }
+
   /*************
     ABOUT SECTION
   *************/
@@ -1130,6 +1163,15 @@ DESKTOP VERSION
     height: 350px;
   }
 
+  .oneProject .desktop-img {
+    transition: width 2s, height 2s;
+  }
+
+  .oneProject .desktop-img:hover {
+    width: 450px;
+    height: 370px;
+  }
+
   .project3 .desktop-description {
     width: 300px;
     margin-top: 10px;
@@ -1227,5 +1269,11 @@ DESKTOP VERSION
   .oneProject .desktop-img {
     width: 500px;
     height: 400px;
+    transition: width 2s, height 2s;
+  }
+
+  .oneProject .desktop-img:hover {
+    width: 520px;
+    height: 420px;
   }
 }
