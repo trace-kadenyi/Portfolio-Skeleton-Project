@@ -665,7 +665,7 @@ textarea:hover {
 .menu-icon img {
   justify-content: flex-end;
   width: 20px;
-  padding: 20px;
+  margin: 20px;
 }
 
 .menu-overlay-nav {
