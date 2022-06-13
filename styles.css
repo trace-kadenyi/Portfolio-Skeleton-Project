@@ -685,6 +685,7 @@ textarea:hover {
   gap: 40px;
   padding: 28px;
   list-style: none;
+  width: 100px;
 }
 
 #menu-overlay-nav li a {
