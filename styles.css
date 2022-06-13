@@ -574,6 +574,16 @@ textarea:hover {
   margin: 10px auto 0;
 }
 
+.menu-container {
+  /* background: #6070ff; */
+  /* z-index: 1; */
+  /* width: 540px; */
+  /* height: 718px; */
+  /* left: 0; */
+  /* top: 0; */
+  /* margin: 20 auto 0; */
+}
+
 @media screen and (min-width: 540px) and (max-width: 767px) {
   .mobile-skeleton {
     max-width: 100%;
