@@ -426,15 +426,6 @@ button:active {
 
 .desktop-bg-image { display: none; }
 
-.oneProject .main-img {
-  transition: width 2s, height 2s;
-}
-
-.oneProject .main-img:hover {
-  width: 330px;
-  height: 220px;
-}
-
 .bg-image {
   margin-top: 50px;
   width: 100%;
