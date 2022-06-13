@@ -1,539 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="styles.css" rel="stylesheet" />
-    <title>Portfolio: Mobile Version Skeleton</title>
-  </head>
 
-  <body>
-    <main>
-      <section class="mobile-skeleton">
-        <header class="header">
-          <h4 class="logo">My Logo</h4>
-          <nav class="navbar">
-            <ul class="header-container">
-              <li><img src="images/menu.png" alt="menu" onClick="openNav()"/></li>
-            </ul>
-            <ul class="desktop-container">
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-        </header>
-        <section class="main-header">
-          <div class="headline">
-            <div class="main">
-              <h1 class="intro">
-                I'm Kadenyi <br class="breaker-all" />
-                Glad to see <br class="mobile-break" />you!
-              </h1>
-              <p class="pitch">
-                I'm a software developer! I can help you build a product,
-                feature or website. Look through <br class="breaker" />some of
-                my work and experience! If you like what you see and have a
-                project you need <br class="breaker" />coded, don't hesitate to
-                contact me.
-              </p>
-            </div>
-            <div class="connect">
-              <h3><a href="#">LET'S CONNECT</a></h3>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="styles.css" rel="stylesheet" />
+  <title>Portfolio: Mobile Version Skeleton</title>
+</head>
+
+<body>
+  <main>
+    <section class="mobile-skeleton">
+      <header class="header">
+        <h4 class="logo">My Logo</h4>
+        <nav class="navbar">
+          <ul class="header-container">
+            <li><img src="images/menu-bar.png" alt="menu" id="the-menu-bar"/></li>
+          </ul>
+          <ul class="desktop-container">
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="main-header">
+        <div class="headline">
+          <div class="main">
+            <h1 class="intro">
+              I'm Kadenyi <br class="breaker-all" />
+              Glad to see <br class="mobile-break" />you!
+            </h1>
+            <p class="pitch">
+              I'm a software developer! I can help you build a product,
+              feature or website. Look through <br class="breaker" />some of
+              my work and experience! If you like what you see and have a
+              project you need <br class="breaker" />coded, don't hesitate to
+              contact me.
+            </p>
           </div>
-          <div class="contacts">
+          <div class="connect">
+            <h3><a href="#">LET'S CONNECT</a></h3>
+          </div>
+        </div>
+        <div class="contacts">
+          <ul>
+            <li>
+              <a href="#"><img class="first" src="images/tweet.svg" alt="twitter" /></a>
+            </li>
+            <li>
+              <a href="#"><img class="second" src="images/the-i.svg" alt="letter_i" /></a>
+            </li>
+            <li>
+              <a href="#"><img class="second" src="images/the-n.svg" alt="letter_n" /></a>
+            </li>
+            <li>
+              <a href="#"><img class="first" src="images/the-m.svg" alt="letter_m" /></a>
+            </li>
+            <li>
+              <a href="#"><img class="first" src="images/cartoon.svg" alt="cartoon" /></a>
+            </li>
+            <li>
+              <a href="#"><img class="first" src="images/peace.svg" alt="peace" /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+    <!-- Works Section -->
+    <section class="works-sect" id="portfolio-sect">
+      <div class="projects">
+        <div class="oneProject project1">
+          <div class="articles">
+            <article class="article-one">
+              <div class="project-img">
+                <a href="#"><img class="main-img" src="images/tonic_one.svg" alt="project" /></a>
+                <a href="#"><img class="desktop-img" src="images/desktop-image1.png" alt="project" /></a>
+              </div>
+            </article>
+            <article class="article-two">
+              <h2><a href="#" class="tonic">Tonic</a></h2>
+              <div class="description">
+                <h5 class="descript"><a href="#">CANOPY</a></h5>
+                <ul>
+                  <li>
+                    <a href="#"><img src="images/circle.svg" alt="circle" /></a>
+                  </li>
+                  <li><a href="#">Back End Dev</a></li>
+                  <li>
+                    <a href="#"><img src="images/circle.svg" alt="circle" /></a>
+                  </li>
+                  <li><a href="#">2015</a></li>
+                </ul>
+              </div>
+              <div class="text-sect">
+                <p class="text-description">
+                  A daily selection of privately personalized reads; no
+                  accounts <br class="breaker" />
+                  or sign-ups required.
+                </p>
+              </div>
+              <div class="languages">
+                <ul>
+                  <li><a href="#">html</a></li>
+                  <li><a href="#">css</a></li>
+                  <li><a href="#">javaScript</a></li>
+                </ul>
+              </div>
+              <div>
+                <button class="see_project">See Project</button>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="oneProject project_multi-stories project2">
+          <div class="articles article-reverse">
+            <article class="article-one">
+              <div>
+                <a href="#"><img class="main-img" src="images/multi-stories.png" alt="project" /></a>
+                <a href="#"><img class="desktop-img" src="images/desktop-bg-3.png" alt="project" /></a>
+              </div>
+            </article>
+            <article class="article-two">
+              <h2>
+                <a href="#" class="multi_stories tonic">Multi-Post <br class="mobile-break" />
+                  Stories</a>
+              </h2>
+
+              <div class="description">
+                <h5 class="descript"><a href="#">CANOPY</a></h5>
+                <h5><a class="descript-desktop" href="#">FACEBOOK</a></h5>
+                <ul>
+                  <li>
+                    <a href="#"><img src="images/circle.svg" alt="circle" /></a>
+                  </li>
+                  <li><a class="mobile-dev" href="#">Back End Dev</a></li>
+                  <li><a class="desktop-dev" href="#">Full Stack Dev</a></li>
+                  <li>
+                    <a href="#"><img src="images/circle.svg" alt="circle" /></a>
+                  </li>
+                  <li><a href="#">2015</a></li>
+                </ul>
+              </div>
+              <div class="text-sect">
+                <p class="text-description">
+                  A daily selection of privately personalized reads; no
+                  accounts or sign-ups required.
+                </p>
+                <p class="desktop-description">
+                  Experimental content creation feature that allows users to
+                  add to an existing story over the course of a day without
+                  spamming their friends.
+                </p>
+              </div>
+              <div class="languages">
+                <ul>
+                  <li><a href="#">html</a></li>
+                  <li><a class="ruby" href="#">Ruby on Rails</a></li>
+                  <li><a href="#">css</a></li>
+                  <li><a href="#">javaScript</a></li>
+                </ul>
+              </div>
+              <div>
+                <button class="see_project">See Project</button>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="oneProject project3">
+          <div class="articles">
+            <article class="article-one">
+              <div class="images-sect">
+                <a href="#"><img class="main-img" src="images/tonic-project.png" alt="project" /></a>
+                <a href="#"><img class="desktop-img" src="images/desktop-bg-2.png" alt="project" /></a>
+              </div>
+            </article>
+            <article class="article-two">
+              <h2><a href="#" class="tonic">Tonic</a></h2>
+              <h2><a class="desktop-head" href="#">Facebook 360</a></h2>
+
+              <div class="description">
+                <h5 class="descript"><a href="#">CANOPY</a></h5>
+                <h5><a class="descript-desktop" href="#">FACEBOOK</a></h5>
+                <ul>
+                  <li>
+                    <a href="#"><img src="images/circle.svg" alt="circle" /></a>
+                  </li>
+                  <li><a class="mobile-dev" href="#">Back End Dev</a></li>
+                  <li></li>
+                  <li><a class="desktop-dev" href="#">Full Stack Dev</a></li>
+                  <li>
+                    <a href="#"><img src="images/circle.svg" alt="circle" /></a>
+                  </li>
+                  <li><a href="#">2015</a></li>
+                </ul>
+              </div>
+              <div class="text-sect">
+                <p class="text-description">
+                  A daily selection of privately personalized reads; no
+                  accounts or sign-ups required.
+                </p>
+                <p class="desktop-description">
+                  Exploring the future of media in Facebook's frist Virtual
+                  Reality app; a place to discover and enjoy 360 photos and
+                  videos on Gear VR.
+                </p>
+              </div>
+              <div class="languages">
+                <ul>
+                  <li><a href="#">html</a></li>
+                  <li><a class="ruby" href="#">Ruby on Rails</a></li>
+                  <li><a href="#">css</a></li>
+                  <li><a href="#">javaScript</a></li>
+                </ul>
+              </div>
+              <div>
+                <button class="see_project">See Project</button>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="oneProject project_multi-stories project4">
+          <div class="articles article-reverse">
+            <article class="article-one">
+              <div>
+                <a href="#"><img class="main-img" src="images/multi_stories_two.png" alt="project" /></a>
+                <a href="#"><img class="desktop-img" src="images/desktop-bg-4.png" alt="project" /></a>
+              </div>
+            </article>
+            <article class="article-two">
+              <h2>
+                <a href="#" class="multi_stories tonic">Multi-Post <br class="mobile-break" />Stories</a>
+              </h2>
+              <h2><a href="#" class="desktop-head">Uber Navigation</a></h2>
+              <div class="description">
+                <h5 class="descript"><a href="#">CANOPY</a></h5>
+                <h5><a class="descript-desktop" href="#">Uber</a></h5>
+                <ul>
+                  <li>
+                    <a href="#"><img src="images/circle.svg" alt="circle" /></a>
+                  </li>
+                  <li><a class="mobile-dev" href="#">Back End Dev</a></li>
+                  <li><a class="desktop-dev" href="#">Lead Developer</a></li>
+                  <li>
+                    <a href="#"><img src="images/circle.svg" alt="circle" /></a>
+                  </li>
+                  <li><a class="mobile-year" href="#">2015</a></li>
+                  <li><a class="desktop-year" href="#">2018</a></li>
+                </ul>
+              </div>
+              <div class="text-sect">
+                <p class="text-description">
+                  A daily selection of privately personalized reads; no
+                  accounts or sign-ups required.
+                </p>
+                <p class="desktop-description">
+                  A smart assistant to make driving more safe, efficient and
+                  fun by unlocking your most expensive computer: your car.
+                </p>
+              </div>
+              <div class="languages">
+                <ul>
+                  <li><a href="#">html</a></li>
+                  <li><a class="ruby" href="#">Ruby on Rails</a></li>
+                  <li><a href="#">css</a></li>
+                  <li><a href="#">javaScript</a></li>
+                </ul>
+              </div>
+              <div>
+                <button class="see_project">See Project</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-sect" id="the-about-sect">
+      <div class="about-articles">
+        <article class="about-article-one">
+          <div class="about">
+            <h2 class="about-intro intro">
+              About <br class="mini-break" />Myself
+            </h2>
+            <p class="about-pitch pitch">
+              I'm a software developer! I can help you build a product,
+              feature or website. Look through some of my work and experience!
+              If you like what you see and have a project you need coded,
+              don't hesitate to contact me.
+            </p>
+          </div>
+          <div class="about-connect">
+            <h3><a href="#">LET'S CONNECT</a></h3>
+          </div>
+          <div class="about-contacts">
             <ul>
               <li>
-                <a href="#"
-                  ><img class="first" src="images/tweet.svg" alt="twitter"
-                /></a>
+                <a href="#"><img class="first" src="images/cartoon.svg" alt="cartoon" /></a>
+              </li>
+
+              <li>
+                <a href="#"><img class="second" src="images/the-i.svg" alt="letter_i" /></a>
               </li>
               <li>
-                <a href="#"
-                  ><img class="second" src="images/the-i.svg" alt="letter_i"
-                /></a>
+                <a href="#"><img class="second" src="images/the-n.svg" alt="letter_n" /></a>
               </li>
               <li>
-                <a href="#"
-                  ><img class="second" src="images/the-n.svg" alt="letter_n"
-                /></a>
+                <a href="#"><img class="first" src="images/peace.svg" alt="peace" /></a>
               </li>
               <li>
-                <a href="#"
-                  ><img class="first" src="images/the-m.svg" alt="letter_m"
-                /></a>
+                <a href="#"><img class="first" src="images/tweet.svg" alt="twitter" /></a>
               </li>
               <li>
-                <a href="#"
-                  ><img class="first" src="images/cartoon.svg" alt="cartoon"
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img class="first" src="images/peace.svg" alt="peace"
-                /></a>
+                <a href="#"><img class="first" src="images/the-m.svg" alt="letter_m" /></a>
               </li>
             </ul>
           </div>
-        </section>
-      </section>
-
-      <!-- Works Section -->
-      <section class="works-sect" id="portfolio-sect">
-        <div class="projects">
-          <div class="oneProject project1">
-            <div class="articles">
-              <article class="article-one">
-                <div class="project-img">
-                  <a href="#"
-                    ><img
-                      class="main-img"
-                      src="images/tonic_one.svg"
-                      alt="project"
-                  /></a>
-                  <a href="#"
-                    ><img
-                      class="desktop-img"
-                      src="images/desktop-image1.png"
-                      alt="project"
-                  /></a>
-                </div>
-              </article>
-              <article class="article-two">
-                <h2><a href="#" class="tonic">Tonic</a></h2>
-                <div class="description">
-                  <h5 class="descript"><a href="#">CANOPY</a></h5>
-                  <ul>
-                    <li>
-                      <a href="#"
-                        ><img src="images/circle.svg" alt="circle"
-                      /></a>
-                    </li>
-                    <li><a href="#">Back End Dev</a></li>
-                    <li>
-                      <a href="#"
-                        ><img src="images/circle.svg" alt="circle"
-                      /></a>
-                    </li>
-                    <li><a href="#">2015</a></li>
-                  </ul>
-                </div>
-                <div class="text-sect">
-                  <p class="text-description">
-                    A daily selection of privately personalized reads; no
-                    accounts <br class="breaker" />
-                    or sign-ups required.
-                  </p>
-                </div>
-                <div class="languages">
-                  <ul>
-                    <li><a href="#">html</a></li>
-                    <li><a href="#">css</a></li>
-                    <li><a href="#">javaScript</a></li>
-                  </ul>
-                </div>
-                <div>
-                  <button class="see_project">See Project</button>
-                </div>
-              </article>
-            </div>
+          <div>
+            <button class="about-btn see_project">Get my resume</button>
           </div>
-
-          <div class="oneProject project_multi-stories project2">
-            <div class="articles article-reverse">
-              <article class="article-one">
-                <div>
-                  <a href="#"
-                    ><img
-                      class="main-img"
-                      src="images/multi-stories.png"
-                      alt="project"
-                  /></a>
-                  <a href="#"
-                    ><img
-                      class="desktop-img"
-                      src="images/desktop-bg-3.png"
-                      alt="project"
-                  /></a>
-                </div>
-              </article>
-              <article class="article-two">
-                <h2>
-                  <a href="#" class="multi_stories tonic"
-                    >Multi-Post <br class="mobile-break" />
-                    Stories</a
-                  >
-                </h2>
-
-                <div class="description">
-                  <h5 class="descript"><a href="#">CANOPY</a></h5>
-                  <h5><a class="descript-desktop" href="#">FACEBOOK</a></h5>
-                  <ul>
-                    <li>
-                      <a href="#"
-                        ><img src="images/circle.svg" alt="circle"
-                      /></a>
-                    </li>
-                    <li><a class="mobile-dev" href="#">Back End Dev</a></li>
-                    <li><a class="desktop-dev" href="#">Full Stack Dev</a></li>
-                    <li>
-                      <a href="#"
-                        ><img src="images/circle.svg" alt="circle"
-                      /></a>
-                    </li>
-                    <li><a href="#">2015</a></li>
-                  </ul>
-                </div>
-                <div class="text-sect">
-                  <p class="text-description">
-                    A daily selection of privately personalized reads; no
-                    accounts or sign-ups required.
-                  </p>
-                  <p class="desktop-description">
-                    Experimental content creation feature that allows users to
-                    add to an existing story over the course of a day without
-                    spamming their friends.
-                  </p>
-                </div>
-                <div class="languages">
-                  <ul>
-                    <li><a href="#">html</a></li>
-                    <li><a class="ruby" href="#">Ruby on Rails</a></li>
-                    <li><a href="#">css</a></li>
-                    <li><a href="#">javaScript</a></li>
-                  </ul>
-                </div>
-                <div>
-                  <button class="see_project">See Project</button>
-                </div>
-              </article>
+        </article>
+        <article class="about-article-two">
+          <div class="abilities-section">
+            <div class="abilities-intro">
+              <h4>Languages</h4>
+              <img src="images/down-icon.png" alt="icon" />
             </div>
+            <ul>
+              <li class="about-list">
+                <img src="images/js-icon.png" alt="js" />JavaScript
+              </li>
+              <li class="about-list">
+                <img src="images/html-icon.png" alt="js" />HTML
+              </li>
+              <li class="about-list">
+                <img src="images/css-icon.png" alt="js" />CSS
+              </li>
+            </ul>
           </div>
-          <div class="oneProject project3">
-            <div class="articles">
-              <article class="article-one">
-                <div class="images-sect">
-                  <a href="#"
-                    ><img
-                      class="main-img"
-                      src="images/tonic-project.png"
-                      alt="project"
-                  /></a>
-                  <a href="#"
-                    ><img
-                      class="desktop-img"
-                      src="images/desktop-bg-2.png"
-                      alt="project"
-                  /></a>
-                </div>
-              </article>
-              <article class="article-two">
-                <h2><a href="#" class="tonic">Tonic</a></h2>
-                <h2><a class="desktop-head" href="#">Facebook 360</a></h2>
-
-                <div class="description">
-                  <h5 class="descript"><a href="#">CANOPY</a></h5>
-                  <h5><a class="descript-desktop" href="#">FACEBOOK</a></h5>
-                  <ul>
-                    <li>
-                      <a href="#"
-                        ><img src="images/circle.svg" alt="circle"
-                      /></a>
-                    </li>
-                    <li><a class="mobile-dev" href="#">Back End Dev</a></li>
-                    <li></li>
-                    <li><a class="desktop-dev" href="#">Full Stack Dev</a></li>
-                    <li>
-                      <a href="#"
-                        ><img src="images/circle.svg" alt="circle"
-                      /></a>
-                    </li>
-                    <li><a href="#">2015</a></li>
-                  </ul>
-                </div>
-                <div class="text-sect">
-                  <p class="text-description">
-                    A daily selection of privately personalized reads; no
-                    accounts or sign-ups required.
-                  </p>
-                  <p class="desktop-description">
-                    Exploring the future of media in Facebook's frist Virtual
-                    Reality app; a place to discover and enjoy 360 photos and
-                    videos on Gear VR.
-                  </p>
-                </div>
-                <div class="languages">
-                  <ul>
-                    <li><a href="#">html</a></li>
-                    <li><a class="ruby" href="#">Ruby on Rails</a></li>
-                    <li><a href="#">css</a></li>
-                    <li><a href="#">javaScript</a></li>
-                  </ul>
-                </div>
-                <div>
-                  <button class="see_project">See Project</button>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="oneProject project_multi-stories project4">
-            <div class="articles article-reverse">
-              <article class="article-one">
-                <div>
-                  <a href="#"
-                    ><img
-                      class="main-img"
-                      src="images/multi_stories_two.png"
-                      alt="project"
-                  /></a>
-                  <a href="#"
-                    ><img
-                      class="desktop-img"
-                      src="images/desktop-bg-4.png"
-                      alt="project"
-                  /></a>
-                </div>
-              </article>
-              <article class="article-two">
-                <h2>
-                  <a href="#" class="multi_stories tonic"
-                    >Multi-Post <br class="mobile-break" />Stories</a
-                  >
-                </h2>
-                <h2><a href="#" class="desktop-head">Uber Navigation</a></h2>
-                <div class="description">
-                  <h5 class="descript"><a href="#">CANOPY</a></h5>
-                  <h5><a class="descript-desktop" href="#">Uber</a></h5>
-                  <ul>
-                    <li>
-                      <a href="#"
-                        ><img src="images/circle.svg" alt="circle"
-                      /></a>
-                    </li>
-                    <li><a class="mobile-dev" href="#">Back End Dev</a></li>
-                    <li><a class="desktop-dev" href="#">Lead Developer</a></li>
-                    <li>
-                      <a href="#"
-                        ><img src="images/circle.svg" alt="circle"
-                      /></a>
-                    </li>
-                    <li><a class="mobile-year" href="#">2015</a></li>
-                    <li><a class="desktop-year" href="#">2018</a></li>
-                  </ul>
-                </div>
-                <div class="text-sect">
-                  <p class="text-description">
-                    A daily selection of privately personalized reads; no
-                    accounts or sign-ups required.
-                  </p>
-                  <p class="desktop-description">
-                    A smart assistant to make driving more safe, efficient and
-                    fun by unlocking your most expensive computer: your car.
-                  </p>
-                </div>
-                <div class="languages">
-                  <ul>
-                    <li><a href="#">html</a></li>
-                    <li><a class="ruby" href="#">Ruby on Rails</a></li>
-                    <li><a href="#">css</a></li>
-                    <li><a href="#">javaScript</a></li>
-                  </ul>
-                </div>
-                <div>
-                  <button class="see_project">See Project</button>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- About Section -->
-      <section class="about-sect" id="the-about-sect">
-        <div class="about-articles">
-          <article class="about-article-one">
-            <div class="about">
-              <h2 class="about-intro intro">
-                About <br class="mini-break" />Myself
-              </h2>
-              <p class="about-pitch pitch">
-                I'm a software developer! I can help you build a product,
-                feature or website. Look through some of my work and experience!
-                If you like what you see and have a project you need coded,
-                don't hesitate to contact me.
-              </p>
-            </div>
-            <div class="about-connect">
-              <h3><a href="#">LET'S CONNECT</a></h3>
-            </div>
-            <div class="about-contacts">
-              <ul>
-                <li>
-                  <a href="#"
-                    ><img class="first" src="images/cartoon.svg" alt="cartoon"
-                  /></a>
-                </li>
-
-                <li>
-                  <a href="#"
-                    ><img class="second" src="images/the-i.svg" alt="letter_i"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><img class="second" src="images/the-n.svg" alt="letter_n"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><img class="first" src="images/peace.svg" alt="peace"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><img class="first" src="images/tweet.svg" alt="twitter"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><img class="first" src="images/the-m.svg" alt="letter_m"
-                  /></a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <button class="about-btn see_project">Get my resume</button>
-            </div>
-          </article>
-          <article class="about-article-two">
-            <div class="abilities-section">
-              <div class="abilities-intro">
-                <h4>Languages</h4>
-                <img src="images/down-icon.png" alt="icon" />
-              </div>
-              <ul>
-                <li class="about-list">
-                  <img src="images/js-icon.png" alt="js" />JavaScript
-                </li>
-                <li class="about-list">
-                  <img src="images/html-icon.png" alt="js" />HTML
-                </li>
-                <li class="about-list">
-                  <img src="images/css-icon.png" alt="js" />CSS
-                </li>
-              </ul>
+          <div class="abilities-section">
+            <div class="frames abilities-intro">
+              <h4>Frameworks</h4>
+              <img src="images/side-icon.png" alt="icon" />
             </div>
             <div class="abilities-section">
-              <div class="frames abilities-intro">
-                <h4>Frameworks</h4>
+              <div class="skills abilities-intro">
+                <h4>Skills</h4>
                 <img src="images/side-icon.png" alt="icon" />
               </div>
-              <div class="abilities-section">
-                <div class="skills abilities-intro">
-                  <h4>Skills</h4>
-                  <img src="images/side-icon.png" alt="icon" />
-                </div>
-              </div>
             </div>
-          </article>
-        </div>
-      </section>
+          </div>
+        </article>
+      </div>
+    </section>
 
-      <!-- Contact Section -->
-      <section class="contact-info" id="the-contacts-sect">
-        <div class="contacts-sect">
-          <div class="img-container">
-            <img
-              class="bg-image"
-              src="images/bg-image.png"
-              alt="contact-image"
-            />
-            <img
-              class="desktop-bg-image"
-              src="images/contact-form-desktop-background.png"
-              alt="contact-image"
-            />
+    <!-- Contact Section -->
+    <section class="contact-info" id="the-contacts-sect">
+      <div class="contacts-sect">
+        <div class="img-container">
+          <img class="bg-image" src="images/bg-image.png" alt="contact-image" />
+          <img class="desktop-bg-image" src="images/contact-form-desktop-background.png" alt="contact-image" />
+        </div>
+        <div class="contacts-content">
+          <div class="contact-intro">
+            <h2>Contact me</h2>
+            <p class="pitch mobile-pitch">
+              If you have an application you <br />
+              are interested in developing, a <br />
+              feature that you need built or a <br />
+              project that needs coding, I'd <br />
+              love to help with it
+            </p>
+            <p class="desktop-pitch">
+              If you have an application you are interested in developing, a
+              feature that you need built or a project that needs coding, I'd
+              love to help with it
+            </p>
           </div>
-          <div class="contacts-content">
-            <div class="contact-intro">
-              <h2>Contact me</h2>
-              <p class="pitch mobile-pitch">
-                If you have an application you <br />
-                are interested in developing, a <br />
-                feature that you need built or a <br />
-                project that needs coding, I'd <br />
-                love to help with it
-              </p>
-              <p class="desktop-pitch">
-                If you have an application you are interested in developing, a
-                feature that you need built or a project that needs coding, I'd
-                love to help with it
-              </p>
-            </div>
-            <div class="contact-form">
-              <form action="https://formspree.io/f/mrgjjjpg" method="post">
-                <label for="myName">Enter Your Name:</label>
-                <input
-                  type="text"
-                  maxlength="30"
-                  id="myName"
-                  name="myName"
-                  placeholder="Kadenyi"
-                  required
-                />
-                <label for="email">Enter Your Email:</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="treykadenyi@gmail.com"
-                  required
-                />
-                <textarea
-                  rows="5"
-                  cols="10"
-                  maxlength="500"
-                  name="message"
-                  placeholder="Write your message here"
-                  required
-                ></textarea>
-                <button class="touch" type="submit">Get In Touch</button>
-              </form>
-            </div>
-          </div>
-          <div>
-            <img class="dash" src="images/dash_contact-icon.png" alt="dash" />
+          <div class="contact-form">
+            <form action="https://formspree.io/f/mrgjjjpg" method="post">
+              <label for="myName">Enter Your Name:</label>
+              <input type="text" maxlength="30" id="myName" name="myName" placeholder="Kadenyi" required />
+              <label for="email">Enter Your Email:</label>
+              <input type="email" name="email" id="email" placeholder="treykadenyi@gmail.com" required />
+              <textarea rows="5" cols="10" maxlength="500" name="message" placeholder="Write your message here"
+                required></textarea>
+              <button class="touch" type="submit">Get In Touch</button>
+            </form>
           </div>
         </div>
-      </section>
-      <!-- Menu Overlay -->
-      <section></section>
-    </main>
+        <div>
+          <img class="dash" src="images/dash_contact-icon.png" alt="dash" />
+        </div>
+      </div>
+    </section>
 
+  </main>
 
-    <div id="overlay" class="menu-overlay-container">
-      <div id="menu-icon">
-        <img src="./images/close.svg" onClick="closeNav()"/>
+  <!-- Menu Overlay -->
+  <section>
+    <div id="menu-bar-overlay">
+      <div class="menu-icon">
+        <img src="./images/close-menu-bar.svg" alt="close-menu-bar" onClick="closeMenuBar()" />
       </div>
       <nav id="menu-overlay-nav">
         <ul>
-          <li><a href="#portfolio-sect">Portfolio</a></li>
-          <li><a href="#the-about-sect">About</a></li>
-          <li><a href="#the-contacts-sect">Contact</a></li>
+          <li class="menu-options"><a href="#portfolio-sect">Portfolio</a></li>
+          <li class="menu-options"><a href="#the-about-sect">About</a></li>
+          <li class="menu-options"><a href="#the-contacts-sect">Contact</a></li>
         </ul>
       </nav>
     </div>
+  </section>
 
-    <script>
-      function openNav() {
-        document.getElementById("overlay").style.display = "block";
-      }
-      
-      function closeNav() {
-        document.getElementById("overlay").style.display = "none";
-      }
-      </script>
-  </body>
+  <script src="index.js"></script>
+</body>
+
 </html>
