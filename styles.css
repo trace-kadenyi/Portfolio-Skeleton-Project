@@ -300,11 +300,20 @@ main {
   border-radius: 10px;
   margin-top: 30px;
   margin-bottom: 20px;
+  transition: width 2s height 2s ease-in;
 }
 
 .see_project:hover {
   text-decoration: underline;
   text-decoration-color: #6070ff;
+  background: #6070ff;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+}
+
+.see_project:active {
+  background: #2230d2;
 }
 
 a:hover {
@@ -388,6 +397,14 @@ a:hover {
 
 .about-btn {
   margin: 80px 24px 50px;
+  transition: width 2s height 2s ease-in;
+}
+
+.about-btn:hover {
+  background: #6070ff;
+  color: #fff;
+  width: 200px;
+  height: 50px;
 }
 
 .abilities-section {
@@ -458,17 +475,6 @@ a:hover {
 .description li a:hover {
   text-decoration: underline;
   text-decoration-color: #6070ff;
-}
-
-button {
-  transition: width 2s height 2s ease-in;
-}
-
-button:hover {
-  background: #6070ff;
-  color: #fff;
-  width: 200px;
-  height: 50px;
 }
 
 button:active {
@@ -606,6 +612,7 @@ input:focus {
   line-height: 24px;
   color: #6070ff;
   border: 1px white solid;
+  transition: width 2s height 2s ease-in;
 }
 
 .contact-intro h2:hover {
@@ -630,6 +637,14 @@ textarea:hover {
   text-decoration: underline;
   text-decoration-color: #396df2;
   text-decoration-thickness: 2px;
+  background: #6070ff;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+}
+
+.touch:active {
+  background: #2230d2;
 }
 
 .contact-form input:hover {
@@ -729,12 +744,28 @@ textarea:hover {
 .see_project-popup {
   margin: 50px 7px 16px;
   padding: 8px;
-  transition: width 2s height 2s;
+  border: 1px solid #6070ff;
+  background-color: #fff;
+  color: #396df2;
+  letter-spacing: 0.03em;
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .see_project-popup:hover {
-  width: 100px;
-  height: 60px;
+  text-decoration: underline;
+  text-decoration-color: #6070ff;
+  background: #6070ff;
+  color: #fff;
+}
+
+.see_project-popup:active {
+  background: #2230d2;
 }
 
 .desktop-popup-window {
@@ -936,15 +967,6 @@ textarea:hover {
 
   .see-project-desktop-version {
     display: flex;
-  }
-
-  .see-project-desktop-popup {
-    transition: width 2s height 2s;
-  }
-
-  .see-project-desktop-popup:hover {
-    width: 130px;
-    height: 80px;
   }
 }
 
@@ -1599,12 +1621,29 @@ DESKTOP VERSION
   }
 
   .see-project-desktop-popup {
-    transition: width 2s height 2s;
+    border: 1px solid #6070ff;
+    background-color: #fff;
+    color: #396df2;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 
   .see-project-desktop-popup:hover {
-    width: 130px;
-    height: 80px;
+    text-decoration: underline;
+    text-decoration-color: #6070ff;
+    background: #6070ff;
+    color: #fff;
+  }
+
+  .see-project-desktop-popup:active {
+    background: #2230d2;
   }
 }
 
@@ -1774,12 +1813,29 @@ DESKTOP VERSION
   }
 
   .see-project-desktop-popup {
-    transition: width 2s height 2s;
+    border: 1px solid #6070ff;
+    background-color: #fff;
+    color: #396df2;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 
   .see-project-desktop-popup:hover {
-    width: 130px;
-    height: 80px;
+    text-decoration: underline;
+    text-decoration-color: #6070ff;
+    background: #6070ff;
+    color: #fff;
+  }
+
+  .see-project-desktop-popup:active {
+    background: #2230d2;
   }
 }
 
