@@ -215,11 +215,15 @@ main {
   list-style-type: none;
   justify-content: space-between;
   width: 200px;
-  margin-top: -5px;
+  /* margin-top: -5px; */
 }
 
-.description a {
-  text-decoration: none;
+.description h5 {
+  font-size: 13px;
+  color: #7a869a;
+}
+
+.description li {
   font-size: 13px;
   color: #7a869a;
 }
@@ -269,7 +273,21 @@ main {
   display: none;
 }
 
-.languages a {
+/* .languages a {
+  text-decoration: none;
+  font-size: 10px;
+  letter-spacing: 0.03em;
+  line-height: 16px;
+  font-weight: 500;
+  height: 16px;
+  color: #6070ff;
+  background: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  margin-right: 6px;
+} */
+
+.languages li {
   text-decoration: none;
   font-size: 10px;
   letter-spacing: 0.03em;
@@ -451,10 +469,10 @@ a:hover {
   text-decoration: underline;
 }
 
-.description li a:hover {
+/* .description li a:hover {
   text-decoration: underline;
   text-decoration-color: #6070ff;
-}
+} */
 
 button {
   transition: width 2s height 2s ease-in;
@@ -743,6 +761,10 @@ textarea:hover {
     margin-top: 20px;
   }
 
+  .description h5 {
+    margin-top: 2px;
+  }
+
   .text-sect {
     margin-top: 20px;
   }
@@ -932,6 +954,17 @@ DESKTOP VERSION
     justify-content: space-around;
   }
 
+  .description h5 {
+    margin-top: 2px;
+  }
+
+  .description {
+    margin-top: 10px;
+  }
+  .desktop-dev-uber {
+    padding-left: 17px;
+  }
+
   /*************
  Project 1
 *************/
@@ -985,7 +1018,7 @@ DESKTOP VERSION
 
   .languages li {
     margin: 7px;
-    margin-right: -8px;
+    /* margin-right: -8px; */
   }
 
   .languages ul {
