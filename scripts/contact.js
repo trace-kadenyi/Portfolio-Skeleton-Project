@@ -1,6 +1,8 @@
 // Validate Email Information
 const emailInfo = document.querySelector('#email');
 const getInTouch = document.querySelector('form');
+const clientName = document.querySelector('#myName');
+const clientMessage = document.querySelector('#message');
 const feedbackMessage = document.querySelector('#validationMessage');
 
 const validateEmail = () => {
@@ -12,6 +14,7 @@ const validateEmail = () => {
       feedbackMessage.style.fontWeight = 'bold';
       e.preventDefault();
     } else {
+      saveFormData(clientName, emailInfo, clientMessage);
       feedbackMessage.textContent = 'Success!';
       feedbackMessage.style.color = 'green';
       feedbackMessage.style.fontWeight = 'bold';
@@ -19,3 +22,12 @@ const validateEmail = () => {
   });
 };
 validateEmail();
+
+const saveFormData = (name, email, message) => {
+  const formData = {
+    userName: name,
+    userEmail: email,
+    userMessage: message,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+};
