@@ -33,7 +33,7 @@ const validateEmail = () => {
             feedbackMessage.style.fontWeight = 'bold';
             e.preventDefault();
         } else {
-            saveFormData(clientName.value, emailInfo.value, clientMessage.value);
+            saveFormData(clientName, emailInfo, clientMessage);
             feedbackMessage.textContent = 'Success!';
             feedbackMessage.style.color = 'green';
             feedbackMessage.style.fontWeight = 'bold';
