@@ -76,80 +76,101 @@ const workSection = [
     liveSource: 'https://github.com/TracK92/Portfolio-mobile-version-skeleton.git',
   },
 ];
-
+// Create Project Section 
 function CreateProject(myArray, index) {
   const worksSect = document.querySelector('#portfolio-sect');
   worksSect.classList.add('works-sect');
+
   const projects = document.createElement('div');
   projects.classList.add('projects');
   worksSect.appendChild(projects);
+
   const projectOne = document.createElement('div');
   projectOne.classList.add('oneProject');
   projects.appendChild(projectOne);
+
   const articles = document.createElement('div');
   articles.classList.add('articles');
   projectOne.appendChild(articles);
+
   const articleOne = document.createElement('article');
   articleOne.classList.add('article-one');
+  articleOne.innerHTML = `<img class='main-img' src="${myArray[index].featured_image}" alt="${myArray[index].alt_message}">`;
   articles.appendChild(articleOne);
+
   const articleTwo = document.createElement('article');
   articleTwo.classList.add('article-two');
   articles.appendChild(articleTwo);
+
   const headingTwo = document.createElement('h2');
   headingTwo.classList.add('tonic');
+  headingTwo.innerHTML = `${myArray[index].title}`;
   articleTwo.appendChild(headingTwo);
+
   const description = document.createElement('div');
   description.classList.add('description');
   articleTwo.appendChild(description);
+
   const headingFive = document.createElement('h5');
   headingFive.classList.add('descript');
+  headingFive.innerHTML = `${myArray[index].overview[0]}`;
   description.appendChild(headingFive);
+
   const unorderedList = document.createElement('ul');
   description.appendChild(unorderedList);
+
   const listOne = document.createElement('li');
+  listOne.innerHTML = `<img src="${myArray[index].overview_image}" alt="circle">`;
   unorderedList.appendChild(listOne);
+
   const listTwo = document.createElement('li');
+  listTwo.innerHTML = `${myArray[index].overview[1]}`;
   unorderedList.appendChild(listTwo);
+
   const listThree = document.createElement('li');
+  listThree.innerHTML = `<img src="${myArray[index].overview_image}" alt="circle">`;
   unorderedList.appendChild(listThree);
+
   const listFour = document.createElement('li');
+  listFour.innerHTML = `${myArray[index].overview[2]}`;
   unorderedList.appendChild(listFour);
+
   const textSect = document.createElement('div');
   textSect.classList.add('text-sect');
   articleTwo.appendChild(textSect);
+
   const textDescription = document.createElement('p');
   textDescription.classList.add('text-description');
+  textDescription.innerHTML = `${myArray[index].description}`;
   textSect.appendChild(textDescription);
+
   const languages = document.createElement('div');
   languages.classList.add('languages');
   articleTwo.appendChild(languages);
+
   const unorderedListTwo = document.createElement('ul');
   languages.appendChild(unorderedListTwo);
+
   const listLanguagesOne = document.createElement('li');
+  listLanguagesOne.innerHTML = `${myArray[index].technologies[0]}`;
   unorderedListTwo.appendChild(listLanguagesOne);
+
   const listLanguagesTwo = document.createElement('li');
+  listLanguagesTwo.innerHTML = `${myArray[index].technologies[1]}`;
   unorderedListTwo.appendChild(listLanguagesTwo);
+
   const listLanguagesThree = document.createElement('li');
+  listLanguagesThree.innerHTML = `${myArray[index].technologies[2]}`;
   unorderedListTwo.appendChild(listLanguagesThree);
+
   const seeProjectOption = document.createElement('div');
   articleTwo.appendChild(seeProjectOption);
+
   const seeProjectBtn = document.createElement('button');
   seeProjectBtn.classList.add('see_project');
   seeProjectBtn.id = `${myArray[index].id}`;
-  seeProjectOption.appendChild(seeProjectBtn);
-  // Project Information
-  articleOne.innerHTML = `<img class='main-img' src="${myArray[index].featured_image}" alt="${myArray[index].alt_message}">`;
-  headingTwo.innerHTML = `${myArray[index].title}`;
-  headingFive.innerHTML = `${myArray[index].overview[0]}`;
-  listOne.innerHTML = `<img src="${myArray[index].overview_image}" alt="circle">`;
-  listTwo.innerHTML = `${myArray[index].overview[1]}`;
-  listThree.innerHTML = `<img src="${myArray[index].overview_image}" alt="circle">`;
-  listFour.innerHTML = `${myArray[index].overview[2]}`;
-  textDescription.innerHTML = `${myArray[index].description}`;
-  listLanguagesOne.innerHTML = `${myArray[index].technologies[0]}`;
-  listLanguagesTwo.innerHTML = `${myArray[index].technologies[1]}`;
-  listLanguagesThree.innerHTML = `${myArray[index].technologies[2]}`;
   seeProjectBtn.innerHTML = 'See Project';
+  seeProjectOption.appendChild(seeProjectBtn);
 }
 const displayProject = () => {
   const projectCardCount = [0, 1, 2, 3];
@@ -176,67 +197,30 @@ function addPopupImage(seeProjectId) {
       desktopProjectImage.innerHTML = `<img class="desktop-img-popup" src="${workProject.featured_image}" alt="${workProject.alt_message}">`;
       projectTitle.innerHTML = `${workProject.title}`;
       desktopPopupHeading.innerHTML = `${workProject.title}`;
-    } else if (workProject.id === seeProjectId) {
-      projectImage.innerHTML = `<img class="main-img" src="${workProject.featured_image}" alt="${workProject.alt_message}">`;
-      desktopProjectImage.innerHTML = `<img class="desktop-img-popup" src="${workProject.featured_image}" alt="${workProject.alt_message}">`;
-      projectTitle.innerHTML = `${workProject.title}`;
-      desktopPopupHeading.innerHTML = `${workProject.title}`;
-    } else if (workProject.id === seeProjectId) {
-      projectImage.innerHTML = `<img class="main-img" src="${workProject.featured_image}" alt="${workProject.alt_message}">`;
-      desktopProjectImage.innerHTML = `<img class="desktop-img-popup" src="${workProject.featured_image}" alt="${workProject.alt_message}">`;
-      projectTitle.innerHTML = `${workProject.title}`;
-      desktopPopupHeading.innerHTML = `${workProject.title}`;
-    } else if (workProject.id === seeProjectId) {
-      projectImage.innerHTML = `<img class="main-img" src="${workProject.featured_image}" alt="${workProject.alt_message}">`;
-      desktopProjectImage.innerHTML = `<img class="desktop-img-popup" src="${workProject.featured_image}" alt="${workProject.alt_message}">`;
-      projectTitle.innerHTML = `${workProject.title}`;
-      desktopPopupHeading.innerHTML = `${workProject.title}`;
     }
   }
 }
-// Open Mobile Popups
-const viewMobileProjects = () => {
+// Open Popup Windows
+const viewProjectDetails = () => {
   checkProjects.forEach((singleProject) => {
     singleProject.addEventListener('click', () => {
       if (Number(singleProject.id) === 1) {
         mobilePopup.style.display = 'block';
-        mainSect.style.display = 'none';
-        addPopupImage(Number(singleProject.id));
-      } else if (Number(singleProject.id) === 2) {
-        mobilePopup.style.display = 'block';
-        mainSect.style.display = 'none';
-        addPopupImage(Number(singleProject.id));
-      } else if (Number(singleProject.id) === 3) {
-        mobilePopup.style.display = 'block';
-        mainSect.style.display = 'none';
-        addPopupImage(Number(singleProject.id));
-      } else if (Number(singleProject.id) === 4) {
-        mobilePopup.style.display = 'block';
-        mainSect.style.display = 'none';
-        addPopupImage(Number(singleProject.id));
-      }
-    });
-  });
-};
-viewMobileProjects();
-
-// Open Desktop Popups
-const viewDesktopProjects = () => {
-  checkProjects.forEach((singleProject) => {
-    singleProject.addEventListener('click', () => {
-      if (Number(singleProject.id) === 1) {
         desktopPopup.style.display = 'block';
         mainSect.style.display = 'none';
         addPopupImage(Number(singleProject.id));
       } else if (Number(singleProject.id) === 2) {
+        mobilePopup.style.display = 'block';
         desktopPopup.style.display = 'block';
         mainSect.style.display = 'none';
         addPopupImage(Number(singleProject.id));
       } else if (Number(singleProject.id) === 3) {
+        mobilePopup.style.display = 'block';
         desktopPopup.style.display = 'block';
         mainSect.style.display = 'none';
         addPopupImage(Number(singleProject.id));
       } else if (Number(singleProject.id) === 4) {
+        mobilePopup.style.display = 'block';
         desktopPopup.style.display = 'block';
         mainSect.style.display = 'none';
         addPopupImage(Number(singleProject.id));
@@ -244,7 +228,7 @@ const viewDesktopProjects = () => {
     });
   });
 };
-viewDesktopProjects();
+viewProjectDetails();
 
 // Close Project Popups
 const closeProjectPopups = () => {

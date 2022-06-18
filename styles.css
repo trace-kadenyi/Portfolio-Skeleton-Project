@@ -935,6 +935,9 @@ textarea:hover {
     border-radius: 16px;
     display: flex;
     flex-direction: column;
+    height: 500px;
+    overflow: hidden;
+    overflow-y: scroll;
   }
 
   .popup-icon-desktop {
@@ -1389,6 +1392,9 @@ DESKTOP VERSION
     border-radius: 16px;
     display: flex;
     flex-direction: column;
+    height: 500px;
+    overflow: hidden;
+    overflow-y: scroll;
   }
 
   .popup-icon-desktop {
@@ -1512,6 +1518,9 @@ DESKTOP VERSION
     border-radius: 16px;
     display: flex;
     flex-direction: column;
+    height: 500px;
+    overflow: hidden;
+    overflow-y: scroll;
   }
 
   .mobile-popup-window {
