@@ -133,10 +133,6 @@ main {
   display: none;
 }
 
-.tablet-break {
-  display: none;
-}
-
 .connect a {
   color: #7f8cff;
   margin-left: 24px;
@@ -206,7 +202,7 @@ main {
 .tonic {
   color: #172b4d;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 44px;
   text-decoration: none;
 }
@@ -234,26 +230,13 @@ main {
   color: #7a869a;
 }
 
-.desktop-dev {
-  display: none;
-}
-
 .text-sect {
   width: 295px;
-  height: 76px;
 }
 
 .text-sect:hover {
   text-decoration: underline;
   text-decoration-color: #6070ff;
-}
-
-.desktop-description {
-  display: none;
-}
-
-.desktop-year {
-  display: none;
 }
 
 .text-description {
@@ -265,7 +248,8 @@ main {
 }
 
 .languages {
-  margin-left: 24px;
+  margin-left: 15px;
+  margin-top: 5px;
 }
 
 .languages ul {
@@ -273,10 +257,6 @@ main {
   width: 150px;
   list-style-type: none;
   justify-content: space-around;
-}
-
-.ruby {
-  display: none;
 }
 
 .languages li {
@@ -323,10 +303,6 @@ main {
 
 .see_project:active {
   background: #2230d2;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 .languages-popup li {
@@ -461,19 +437,6 @@ a:hover {
   margin: 36px;
 }
 
-.languages-mobile li {
-  font-size: 10px;
-  letter-spacing: 0.03em;
-  line-height: 16px;
-  font-weight: 500;
-  height: 16px;
-  color: #6070ff;
-  background: #ebebff;
-  border-radius: 8px;
-  padding: 4px 12px;
-  margin-right: 6px;
-}
-
 .abilities-section li {
   display: flex;
   align-items: center;
@@ -507,11 +470,6 @@ button:active {
   background: #2230d2;
 }
 
-.line:hover {
-  text-decoration: underline;
-  text-decoration-color: #6070ff;
-}
-
 .contact-info {
   max-width: 540px;
   display: flex;
@@ -542,10 +500,6 @@ button:active {
   display: flex;
   flex-direction: column;
   margin-bottom: 67px;
-}
-
-.desktop-head {
-  display: none;
 }
 
 .contact-intro h2 {
@@ -684,11 +638,6 @@ textarea:hover {
   border: 2px solid #396df2;
 }
 
-.dash {
-  display: flex;
-  margin: 10px auto 0;
-}
-
 #menu-bar-overlay {
   width: 100%;
   position: fixed;
@@ -764,7 +713,6 @@ textarea:hover {
 .popup-icon {
   width: 15px;
   margin-right: 15px;
-  margin-top: -20px;
 }
 
 .popup-icon-multi-stories {
@@ -777,9 +725,12 @@ textarea:hover {
   margin-top: 22px;
   margin-bottom: 20px;
 }
+.see-popup-container {
+  height: 70px;
+}
 
 .see_project-popup {
-  margin: 50px 7px 16px;
+  margin-right: 7px;
   padding: 8px;
   border: 1px solid #6070ff;
   background-color: #fff;
@@ -790,7 +741,6 @@ textarea:hover {
   font-size: 17px;
   cursor: pointer;
   border-radius: 10px;
-  margin-top: 30px;
   margin-bottom: 20px;
 }
 
@@ -903,7 +853,6 @@ textarea:hover {
     width: 90%;
   }
 
-  /* Popup window */
   .mobile-popup-window {
     display: none !important;
   }
@@ -934,6 +883,7 @@ textarea:hover {
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     display: flex;
+    margin-top: 20px;
     flex-direction: column;
     height: 500px;
     overflow: hidden;
@@ -946,12 +896,12 @@ textarea:hover {
   }
 
   .desktop-img-popup {
-    width: 450px;
-    height: 250px;
+    width: 70%;
     display: flex;
     margin: auto;
     justify-content: center;
   }
+
 
   .descript-desktop-popup {
     display: block;
@@ -964,6 +914,7 @@ textarea:hover {
     font-weight: 400;
     line-height: 24px;
     margin-top: 14px;
+    padding: 5px;
   }
 
   .languages-popup ul {
@@ -1001,7 +952,7 @@ DESKTOP VERSION
   }
 
   .desktopPopupheading {
-    margin-bottom: -10px;
+    margin-bottom: 5px;
   }
 
   .mobile-skeleton {
@@ -1151,7 +1102,7 @@ DESKTOP VERSION
     flex-wrap: wrap;
     width: 250px;
     gap: 7px;
-    margin-top: 40px;
+    margin-top: 15px;
   }
 
   .languages-popup li {
@@ -1164,11 +1115,6 @@ DESKTOP VERSION
     background: #ebebff;
     border-radius: 8px;
     padding: 4px 12px;
-  }
-
-  .desktop-head:hover {
-    text-decoration: underline;
-    text-decoration-color: #6070ff;
   }
 
   .tonic {
@@ -1194,22 +1140,6 @@ DESKTOP VERSION
     width: 10%;
     display: flex;
     justify-content: stretch;
-  }
-
-  .ruby {
-    display: flex;
-    width: 100px;
-    justify-content: center;
-  }
-
-  .desktop-description {
-    display: block;
-    color: #344563;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 24px;
-    height: 70px;
-    width: 350px;
   }
 
   .desktop-container a:hover {
@@ -1395,6 +1325,7 @@ DESKTOP VERSION
     height: 500px;
     overflow: hidden;
     overflow-y: scroll;
+    margin-top: 20px;
   }
 
   .popup-icon-desktop {
@@ -1403,12 +1334,12 @@ DESKTOP VERSION
   }
 
   .desktop-img-popup {
-    width: 600px;
-    height: 250px;
+    width: 70%;
     display: flex;
     margin: auto;
     justify-content: center;
   }
+
 
   .descript-desktop-popup {
     display: block;
@@ -1421,6 +1352,7 @@ DESKTOP VERSION
     font-weight: 400;
     line-height: 24px;
     margin-top: 14px;
+    padding: 5px;
   }
 
   .see-project-desktop-version {
@@ -1440,6 +1372,8 @@ DESKTOP VERSION
     border-radius: 10px;
     margin-top: 30px;
     margin-bottom: 20px;
+    box-shadow: 2px 5px 3px;
+    transition: width 2s height 2s;
   }
 
   .see-project-desktop-popup:hover {
@@ -1447,20 +1381,24 @@ DESKTOP VERSION
     text-decoration-color: #6070ff;
     background: #6070ff;
     color: #fff;
+    width: 150px;
+    height:60px;
   }
 
   .see-project-desktop-popup:active {
     background: #2230d2;
+  }
+
+  .desktop-popup-segment {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .desktop-description {
     margin-top: -15px;
-  }
-
-  .desktopPopupheading {
-    margin-bottom: -5px;
   }
 
   .oneProject .main-img {
@@ -1479,8 +1417,6 @@ DESKTOP VERSION
   .about-connect {
     margin-top: 70px;
   }
-
-  /* PopUp Window */
 
   .desktop-popup-window {
     width: 100%;
@@ -1501,8 +1437,7 @@ DESKTOP VERSION
   }
 
   .desktop-img-popup {
-    width: 600px;
-    height: 300px;
+    width: 70%;
     display: flex;
     margin-bottom: 0;
     justify-content: center;
@@ -1539,6 +1474,7 @@ DESKTOP VERSION
     font-weight: 400;
     line-height: 24px;
     margin-top: 14px;
+    padding: 5px;
   }
 
   .languages-popup ul {
@@ -1548,7 +1484,7 @@ DESKTOP VERSION
     width: 250px;
     gap: 10px;
     margin-bottom: 5px;
-    margin-top: 5px;
+    margin-top: 15px;
   }
 
   .languages-popup li {
@@ -1629,7 +1565,7 @@ DESKTOP VERSION
   }
 
   .desktop-img-popup {
-    width: 90%;
+    width: 70%;
     display: flex;
     margin-bottom: 0;
     justify-content: center;
