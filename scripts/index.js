@@ -33,7 +33,7 @@ const workSection = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featured_image: 'images/tonic_one.svg',
     alt_message: 'My_Tonic_Project',
-    overview: ['CANOPY', 'Back End Dev', 2015],
+    overview: ['CANOPY', 'Full Stack Dev', 2022],
     overview_image: 'images/circle.svg',
     technologies: ['html', 'css', 'javaScript'],
     liveVersion: 'https://track92.github.io/Portfolio-mobile-version-skeleton/',
@@ -45,7 +45,7 @@ const workSection = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featured_image: 'images/multi-stories.png',
     alt_message: 'My_Multi_Stories_Project',
-    overview: ['CANOPY', 'Back End Dev', 2015],
+    overview: ['CANOPY', 'Full Stack Dev', 2022],
     overview_image: 'images/circle.svg',
     technologies: ['html', 'css', 'javaScript'],
     liveVersion: 'https://track92.github.io/Portfolio-mobile-version-skeleton/',
@@ -57,7 +57,7 @@ const workSection = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featured_image: 'images/tonic-project.png',
     alt_message: 'My_Tonic_Project',
-    overview: ['CANOPY', 'Back End Dev', 2015],
+    overview: ['CANOPY', 'Full Stack Dev', 2022],
     overview_image: 'images/circle.svg',
     technologies: ['html', 'css', 'javaScript'],
     liveVersion: 'https://track92.github.io/Portfolio-mobile-version-skeleton/',
@@ -69,14 +69,14 @@ const workSection = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featured_image: 'images/multi_stories_two.png',
     alt_message: 'My_Multi_Stories_Project',
-    overview: ['CANOPY', 'Back End Dev', 2015],
+    overview: ['CANOPY', 'Full Stack Dev', 2022],
     overview_image: 'images/circle.svg',
     technologies: ['html', 'css', 'javaScript'],
     liveVersion: 'https://track92.github.io/Portfolio-mobile-version-skeleton/',
     liveSource: 'https://github.com/TracK92/Portfolio-mobile-version-skeleton.git',
   },
 ];
-// Create Project Section 
+// Create Project Section
 function CreateProject(myArray, index) {
   const worksSect = document.querySelector('#portfolio-sect');
   worksSect.classList.add('works-sect');
@@ -183,7 +183,6 @@ const checkProjects = document.querySelectorAll('.see_project');
 const closePopupIcons = document.querySelectorAll('.popup-icon');
 const mobilePopup = document.querySelector('.mobile-popup-window');
 const desktopPopup = document.querySelector('.desktop-popup-window');
-const mainSect = document.querySelector('.main-sect');
 const projectImage = document.querySelector('.project-img');
 const desktopProjectImage = document.querySelector('.desktop-project-img');
 const projectTitle = document.querySelector('.popupheading');
@@ -207,22 +206,18 @@ const viewProjectDetails = () => {
       if (Number(singleProject.id) === 1) {
         mobilePopup.style.display = 'block';
         desktopPopup.style.display = 'block';
-        mainSect.style.display = 'none';
         addPopupImage(Number(singleProject.id));
       } else if (Number(singleProject.id) === 2) {
         mobilePopup.style.display = 'block';
         desktopPopup.style.display = 'block';
-        mainSect.style.display = 'none';
         addPopupImage(Number(singleProject.id));
       } else if (Number(singleProject.id) === 3) {
         mobilePopup.style.display = 'block';
         desktopPopup.style.display = 'block';
-        mainSect.style.display = 'none';
         addPopupImage(Number(singleProject.id));
       } else if (Number(singleProject.id) === 4) {
         mobilePopup.style.display = 'block';
         desktopPopup.style.display = 'block';
-        mainSect.style.display = 'none';
         addPopupImage(Number(singleProject.id));
       }
     });
@@ -236,7 +231,6 @@ const closeProjectPopups = () => {
     closePopupIcon.addEventListener('click', () => {
       mobilePopup.style.display = 'none';
       desktopPopup.style.display = 'none';
-      mainSect.style.display = 'block';
     });
   });
 };
