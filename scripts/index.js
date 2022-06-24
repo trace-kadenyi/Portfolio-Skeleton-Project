@@ -41,6 +41,7 @@ const workSection = [
   },
   {
     id: 2,
+    class: 'OneProjectReverse',
     title: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featured_image: 'images/multi-stories.png',
@@ -65,6 +66,7 @@ const workSection = [
   },
   {
     id: 4,
+    class: 'OneProjectReverse',
     title: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featured_image: 'images/multi_stories_two.png',
@@ -90,7 +92,7 @@ function CreateProject(myArray, index) {
   projects.appendChild(projectOne);
 
   const articles = document.createElement('div');
-  articles.classList.add('articles');
+  articles.classList.add('articles', `${myArray[index].class}`);
   projectOne.appendChild(articles);
 
   const articleOne = document.createElement('article');

@@ -942,6 +942,10 @@ DESKTOP VERSION
     margin-bottom: 5px;
   }
 
+  .OneProjectReverse {
+    flex-direction: row-reverse;
+  }
+
   .mobile-skeleton {
     max-width: 100%;
     margin-bottom: 114px;
