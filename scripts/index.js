@@ -31,7 +31,7 @@ const workSection = [{
   title: 'Webpack To-Do List',
   description: 'A to-do list created using webpack. It allows the user to add, remove, edit, check, and delete tasks from the list. All the information is saved on local storage.',
   popup_description: 'The to-do list is setup using webpack with all the contents being displayed through the dist folder. It allows the user to add items through the input section. Moroever, the user can also remove and edit items using the options available on the right side of the app. All the data is saved in local storage including the checked items.',
-  featured_image: 'images/webpack-todo.png',
+  featured_image: 'images/todo1.PNG',
   alt_message: 'My_Todo_Project',
   overview: ['CANOPY', 'Full Stack Dev', 2022],
   overview_image: 'images/circle.svg',
