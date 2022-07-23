@@ -1,13 +1,13 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name: Portfolio Mobile Version Skeleton
+# Project Name: Portfolio Skeleton
 
-> Description of the project: This project is a skeleton of the mobile version of my potential portfolio. It includes all the features from the logo to my social media contacts. 
+> Description of the project: This project is a skeleton of my potential portfolio.
 
 
 ## Built With
 
-- Major languages: HTML|CSS
+- Major languages: HTML|CSS|JavaScript
 - Frameworks: None
 - Technologies used: None
 
