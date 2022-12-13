@@ -352,6 +352,10 @@ main {
   text-decoration: underline;
 }
 
+.icon_ul img {
+  width: 50px;
+}
+
 .about-contacts ul {
   display: flex;
   margin-top: 26px;
