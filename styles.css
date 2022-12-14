@@ -66,11 +66,13 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   /* transition: 0.6s; */
   z-index: 1000;
   background: #091e42;
   height: 60px;
 }
+
 .header-container li {
   list-style-type: none;
   margin: 36px;
@@ -93,6 +95,34 @@ main {
 
 nav a {
   transition: 0.3s ease-in-out;
+}
+
+.about-connect a {
+  margin-left: 24px;
+  color: #7f8cff;
+  height: 24px;
+  font-size: 16px;
+  display: flex;
+  font-weight: 500;
+  flex-grow: 0;
+  position: absolute;
+  text-decoration: none;
+  width: 117px;
+}
+
+.connect a {
+  color: #7f8cff;
+  margin-left: 24px;
+  height: 24px;
+  font-size: 16px;
+  display: flex;
+  font-weight: 500;
+  flex-grow: 0;
+  position: absolute;
+  top: 546px;
+  text-decoration: none;
+  width: 117px;
+  line-height: 24px;
 }
 
 nav a:hover {
@@ -149,21 +179,6 @@ nav a:hover {
 
 .breaker {
   display: none;
-}
-
-.connect a {
-  color: #7f8cff;
-  margin-left: 24px;
-  height: 24px;
-  font-size: 16px;
-  display: flex;
-  font-weight: 500;
-  flex-grow: 0;
-  position: absolute;
-  top: 546px;
-  text-decoration: none;
-  width: 117px;
-  line-height: 24px;
 }
 
 .contacts ul {
@@ -344,19 +359,6 @@ nav a:hover {
 
 .about-pitch {
   margin-left: 24px;
-}
-
-.about-connect a {
-  margin-left: 24px;
-  color: #7f8cff;
-  height: 24px;
-  font-size: 16px;
-  display: flex;
-  font-weight: 500;
-  flex-grow: 0;
-  position: absolute;
-  text-decoration: none;
-  width: 117px;
 }
 
 .descript {
@@ -627,8 +629,7 @@ input:focus {
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
-    margin: 10% 20px 20px;
-
+  margin: 10% 20px 20px;
 }
 
 .menu-icon img {
@@ -678,6 +679,7 @@ input:focus {
   left: 0;
   display: none;
   transition: 0.3s;
+
   /* overflow: hidden; */
   overflow-y: scroll;
   background-color: rgb(193, 199, 208, 0.8);
@@ -832,6 +834,7 @@ input:focus {
 
   .oneProject .main-img {
     width: 80%;
+
     /* transition: width 2s ease-in; */
   }
 
@@ -1672,9 +1675,11 @@ DESKTOP VERSION
   .oneProject .main-img {
     width: 500px;
     height: 400px;
+
     /* transition: width 2s, height 2s; */
   }
-/* 
+
+  /*
   .oneProject .main-img:hover {
     width: 520px;
     height: 420px;
