@@ -72,7 +72,7 @@ const workSection = [{
   title: 'Doc Appointments',
   description: "A doctor's appointment app that allows the user to book an appointment with a doctor.",
   popup_description: "The app lets the user book doctor's appointments and also allows the user to cancel the appointment. The app also allows the user to filter the doctors by category. The app also allows the user to add a new doctor to the list.",
-  featured_image: 'images/doc_appointments.png',
+  featured_image: 'images/appointments.png',
   alt_message: 'My_Doc_Project',
   overview: ['WEB APP', 'Full Stack Dev', 2022],
   overview_image: 'images/circle.svg',
@@ -199,8 +199,18 @@ function addPopupImage(seeProjectId) {
           <h2 class="tonic popupheading">${foundProject.title}</h2>
           <img class="menu-icon popup-icon close-modal" src="./images/popup-icon.svg" alt="close-popup-bar"/>
         </div>
-        <div class="project-img">
-          <img class="main-img" src="${foundProject.featured_image}" alt="${foundProject.alt_message}">
+         <div class="description">
+          <h5 class="descript">${foundProject.overview[0]}</h5>
+          <ul>
+            <li>
+              <img src="images/circle.svg" alt="circle" />
+            </li>
+            <li>${foundProject.overview[1]}</li>
+            <li>
+              <img src="images/circle.svg" alt="circle" />
+            </li>
+            <li>${foundProject.overview[2]}</li>
+          </ul>
         </div>
         <div class="text-sect-popup mobile-text-sect">
           <p class="text-description mobile-text-sect">${foundProject.popup_description}</p>
