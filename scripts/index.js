@@ -199,31 +199,11 @@ function addPopupImage(seeProjectId) {
           <h2 class="tonic popupheading">${foundProject.title}</h2>
           <img class="menu-icon popup-icon close-modal" src="./images/popup-icon.svg" alt="close-popup-bar"/>
         </div>
-        <div class="description">
-          <h5 class="descript">CANOPY</h5>
-          <ul>
-            <li>
-              <img src="images/circle.svg" alt="circle" />
-            </li>
-            <li>Full Stack Dev</li>
-            <li>
-              <img src="images/circle.svg" alt="circle" />
-            </li>
-            <li>2022</li>
-          </ul>
-        </div>
         <div class="project-img">
           <img class="main-img" src="${foundProject.featured_image}" alt="${foundProject.alt_message}">
         </div>
         <div class="text-sect-popup mobile-text-sect">
           <p class="text-description mobile-text-sect">${foundProject.popup_description}</p>
-        </div>
-        <div class="languages languages-popup">
-          <ul>
-            <li>html</li>
-            <li>css</li>
-            <li>javaScript</li>
-          </ul>
         </div>
         <div>
           <a href="${foundProject.liveVersion}" target="_blank" class="see_project-popup see_live">See Live <img
@@ -239,19 +219,6 @@ function addPopupImage(seeProjectId) {
           <h2 class="desktopPopupheading">${foundProject.title}</h2>
           <img class="menu-icon popup-icon close-modal" src="./images/popup-icon.svg" alt="close-popup-bar"/>
         </div>
-        <div class="description">
-          <h5 class="descript">CANOPY</h5>
-          <ul>
-            <li>
-              <img src="images/circle.svg" alt="circle" />
-            </li>
-            <li>Full Stack Dev</li>
-            <li>
-              <img src="images/circle.svg" alt="circle" />
-            </li>
-            <li>2022</li>
-          </ul>
-        </div>
         <div class="desktop-project-img">
           <img class="desktop-img-popup" src="${foundProject.featured_image}" alt="${foundProject.alt_message}">
         </div>
@@ -262,14 +229,6 @@ function addPopupImage(seeProjectId) {
             </div>
           </div>
           <div class="second-segment">
-            <div class="languages-popup">
-              <ul class="languages-popup-list-container">
-                <li class="languages-popup-list">html</li>
-                <li class="languages-popup-list">css</li>
-                <li class="languages-popup-list">javaScript</li>
-                <li class="languages-popup-list">github</li>
-              </ul>
-            </div>
             <div class="see-project-desktop-version">
               <a href="${foundProject.liveVersion}" target="_blank" class="see-project-desktop-popup see_live">See Live <img
                   src="images/see-live-icon.svg" alt="see-live-icon" /></a>

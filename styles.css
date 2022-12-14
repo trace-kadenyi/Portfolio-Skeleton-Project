@@ -52,12 +52,25 @@ main {
   display: none;
 }
 
-.header {
+/* .header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-}
+} */
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* transition: 0.6s; */
+  z-index: 1000;
+  background: #091e42;
+  height: 60px;
+}
 .header-container li {
   list-style-type: none;
   margin: 36px;
@@ -76,6 +89,16 @@ main {
   line-height: 20px;
   margin: 24px;
   transition: transform 2s;
+}
+
+nav a {
+  transition: 0.3s ease-in-out;
+}
+
+nav a:hover {
+  text-decoration: overline;
+  letter-spacing: 0.15rem;
+  color: #6070ff;
 }
 
 .logo:hover {
@@ -349,7 +372,7 @@ main {
 }
 
 .connect a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .icon_ul img {
@@ -426,7 +449,7 @@ main {
 }
 
 .abilities-section li:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   text-decoration-color: #6070ff;
 }
 
@@ -435,7 +458,7 @@ main {
 }
 
 .about-connect a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 button:active {
@@ -596,15 +619,22 @@ input:focus {
   transition: 0.3s;
 }
 
+#the-menu-bar {
+  cursor: pointer;
+}
+
 .menu-icon {
   display: flex;
   justify-content: flex-end;
+  cursor: pointer;
+    margin: 10% 20px 20px;
+
 }
 
 .menu-icon img {
   justify-content: flex-end;
   width: 20px;
-  margin: 20px;
+  margin-top: 10%;
 }
 
 .menu-overlay-nav {
@@ -648,9 +678,10 @@ input:focus {
   left: 0;
   display: none;
   transition: 0.3s;
-  overflow: hidden;
+  /* overflow: hidden; */
   overflow-y: scroll;
   background-color: rgb(193, 199, 208, 0.8);
+  margin-top: 15%;
 }
 
 .project1 {
@@ -801,11 +832,11 @@ input:focus {
 
   .oneProject .main-img {
     width: 80%;
-    transition: width 2s ease-in;
+    /* transition: width 2s ease-in; */
   }
 
   .oneProject .main-img:hover {
-    width: 90%;
+    /* width: 90%; */
   }
 
   .mobile-popup-window {
@@ -841,6 +872,8 @@ input:focus {
   }
 
   .oneProject-desktop-popup {
+    position: absolute;
+    top: 5%;
     box-sizing: border-box;
     padding: 16px;
     width: 85%;
@@ -926,7 +959,7 @@ input:focus {
   }
 
   a.see-project-desktop-popup:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-decoration-color: #6070ff;
     background: #6070ff;
     color: #fff;
@@ -967,7 +1000,6 @@ DESKTOP VERSION
   }
 
   .header {
-    height: 100px;
     width: 100%;
     margin-bottom: 50px;
   }
@@ -980,6 +1012,7 @@ DESKTOP VERSION
 
   .desktop-container a {
     text-decoration: none;
+    color: white;
   }
 
   .connect a {
@@ -1138,19 +1171,19 @@ DESKTOP VERSION
   }
 
   .desktop-container a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-decoration-color: #396df2;
     text-decoration-thickness: 2px;
   }
 
   .oneProject .main-img {
-    transition: width 2s, height 2s;
+    /* transition: width 2s, height 2s; */
   }
 
-  .oneProject .main-img:hover {
+  /* .oneProject .main-img:hover {
     width: 310px;
     height: 320px;
-  }
+  } */
 
   /*************
     ABOUT SECTION
@@ -1332,7 +1365,7 @@ DESKTOP VERSION
     height: 500px;
     overflow: hidden;
     overflow-y: scroll;
-    margin-top: 20px;
+    margin-top: 4%;
   }
 
   .popup-icon-desktop {
@@ -1383,7 +1416,7 @@ DESKTOP VERSION
   }
 
   a.see-project-desktop-popup:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-decoration-color: #6070ff;
     background: #6070ff;
     color: #fff;
@@ -1406,14 +1439,14 @@ DESKTOP VERSION
     margin-top: -15px;
   }
 
-  .oneProject .main-img {
+  /* .oneProject .main-img {
     transition: width 2s, height 2s;
   }
 
   .oneProject .main-img:hover {
     width: 380px;
     height: 370px;
-  }
+  } */
 
   .about-pitch {
     font-size: 16px;
@@ -1456,6 +1489,8 @@ DESKTOP VERSION
   }
 
   .oneProject-desktop-popup {
+    position: absolute;
+    top: 10%;
     box-sizing: border-box;
     padding: 16px;
     width: 85%;
@@ -1533,7 +1568,7 @@ DESKTOP VERSION
   }
 
   a.see-project-desktop-popup:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-decoration-color: #6070ff;
     background: #6070ff;
     color: #fff;
@@ -1637,11 +1672,11 @@ DESKTOP VERSION
   .oneProject .main-img {
     width: 500px;
     height: 400px;
-    transition: width 2s, height 2s;
+    /* transition: width 2s, height 2s; */
   }
-
+/* 
   .oneProject .main-img:hover {
     width: 520px;
     height: 420px;
-  }
+  } */
 }
