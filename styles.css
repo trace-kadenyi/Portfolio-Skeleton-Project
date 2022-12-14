@@ -29,6 +29,7 @@ body {
   letter-spacing: 0.15rem;
   margin-bottom: 20px;
 }
+
 main {
   width: 100%;
   margin: auto;
@@ -48,19 +49,19 @@ main {
   margin-right: auto;
   border-bottom-left-radius: 75px;
   background-size: 100% 587.15px;
+
   /* background-size: 200px 200px; */
   background-repeat: no-repeat;
+
   /* background-position: right top 100px; */
 
-/* 
+  /*
    background-image:
     linear-gradient(rgba(31, 31, 32, 0.52), rgba(46, 44, 45, 0.73)),
     url('images/linkedIn.jpg'); */
-    color: white;
-    padding: 20px;
+  color: white;
+  padding: 20px;
 }
-
-
 
 .desktop-container {
   display: none;
@@ -187,6 +188,7 @@ nav a:hover {
   line-height: 24px;
   color: #344563;
   width: 327px;
+
   /* height: 146px; */
   top: 368px;
 }
@@ -1005,17 +1007,19 @@ DESKTOP VERSION
     margin-bottom: 114px;
     background: url("images/linkedIn-removebg-preview.png");
     background-color: #fff;
+
     /* background-size: 100%; */
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+
     /* background-position: right 104px; */
-     /* background-image:
+
+    /* background-image:
     linear-gradient(rgba(31, 31, 32, 0.52), rgba(46, 44, 45, 0.73)),
     url('images/linkedIn.jpg'); */
     background-size: 300px auto;
     background-position: right 104px;
-    
   }
 
   .header-container {
@@ -1091,6 +1095,7 @@ DESKTOP VERSION
 
   .pitch {
     width: 97.5%;
+
     /* height: 98px; */
     line-height: 28px;
     margin-bottom: 10px;
