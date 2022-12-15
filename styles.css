@@ -800,7 +800,7 @@ input:focus {
 }
 
 .desktop-popup-window {
-  display: none;
+  display: none !important;
 }
 
 @media screen and (min-width: 540px) and (max-width: 767px) {
