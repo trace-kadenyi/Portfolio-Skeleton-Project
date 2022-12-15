@@ -799,9 +799,9 @@ input:focus {
   background: #2230d2;
 }
 
-.desktop-popup-window {
-  display: none !important;
-}
+/* .desktop-popup-window {
+  display: none;
+} */
 
 @media screen and (min-width: 540px) and (max-width: 767px) {
   .mobile-skeleton {
@@ -1772,4 +1772,10 @@ DESKTOP VERSION
     width: 520px;
     height: 420px;
   } */
+}
+
+@media screen and (max-width: 539px) {
+  .desktop-popup-window {
+    display: none !important;
+  }
 }
