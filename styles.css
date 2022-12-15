@@ -77,6 +77,7 @@ main {
   0% {
     transform: translateY(-100%);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -166,6 +167,7 @@ nav a:hover {
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -221,6 +223,7 @@ nav a:hover {
   0% {
     transform: translateY(100%);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -820,6 +823,7 @@ input:focus {
 
   .main-img {
     min-width: 450px;
+
     /* border: 2px blue solid; */
   }
 
@@ -1167,9 +1171,11 @@ DESKTOP VERSION
     width: 90%;
     height: 400px;
     gap: 40px;
+
     /* border: 2px red solid; */
 
     /* new styles */
+
     /* display: grid;
     grid-template-columns: 1fr 1fr; */
   }
@@ -1195,6 +1201,7 @@ DESKTOP VERSION
   .main-img {
     width: 300px;
     height: 300px;
+
     /* border: 2px yellow solid; */
   }
 
@@ -1254,7 +1261,7 @@ DESKTOP VERSION
     /* border: 2px green solid; */
     min-width: 300px;
     margin-right: 100px;
-    
+
     /* transition: width 2s, height 2s; */
   }
 
@@ -1519,6 +1526,7 @@ DESKTOP VERSION
 
   .oneProject .main-img {
     min-width: 400px;
+
     /* border: 2px purple solid; */
   }
 
