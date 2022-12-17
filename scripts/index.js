@@ -74,7 +74,7 @@ const workSection = [{
   title: 'Doc Appointments',
   description: "A doctor's appointment app that allows the user to book an appointment with a doctor.",
   popup_description: "The app lets the user book doctor's appointments and also allows the user to cancel the appointment. The app also allows the user to filter the doctors by category. The app also allows the user to add a new doctor to the list.",
-  featured_image: 'images/appointments.png',
+  featured_image: 'images/doc.jpeg',
   alt_message: 'My_Doc_Project',
   overview: ['WEB APP', 'Full Stack Dev', 2022],
   overview_image: 'images/circle.svg',
