@@ -31,7 +31,7 @@ const workSection = [{
   class: 'OneProjectReverse',
   title: 'Bookstore App',
   description: 'A bookstore application that allows the user to store all the books that they are currently reading.',
-  popup_description: 'The bookstore app stores and retrieved data from the API. It allows the user to add and remove books from the list. It also allows the user to change the read status of the book. The app also allows the user to filter the books by category.',
+  popup_description: 'The bookstore app stores and retrieves data from the API. It allows the user to add and remove books from the list. It also allows the user to change the read status of the book. The app also allows the user to filter the books by category.',
   featured_image: 'images/books.jpg',
   alt_message: 'My_Bookstore_Project',
   overview: ['WEB APP', 'Front End Dev', 2022],
