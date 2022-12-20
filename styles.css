@@ -745,10 +745,21 @@ input:focus {
   background-color: transparent;
 }
 
-.popup-header {
+/* .popup-header {
   display: flex;
   justify-content: space-between;
-}
+
+} */
+
+/* .popup-header h2 {
+  border: 2px red solid;
+  position: fixed;
+} */
+
+/* .popup-icon {
+  position: fixed;
+  top: 0;
+} */
 
 .main-img {
   /* border: 2px yellow solid; */
@@ -799,15 +810,22 @@ input:focus {
   background: #2230d2;
 }
 
-/* .desktop-popup-window {
-  display: none;
-} */
 
 @media screen and (min-width: 540px) and (max-width: 767px) {
   .mobile-skeleton {
     max-width: 100%;
     margin-bottom: 114px;
   }
+
+  .popup-header h2 {
+  position: fixed;
+  background: white;
+}
+
+.popup-icon {
+  position: fixed;
+  background: white;
+}
 
   .mobile-break {
     display: none;
@@ -1039,6 +1057,16 @@ DESKTOP VERSION
   .desktopPopupheading {
     margin-bottom: 5px;
   }
+
+    .popup-header h2 {
+  position: fixed;
+  background: white;
+}
+
+.popup-icon {
+  position: fixed;
+  background: white;
+}
 
   .OneProjectReverse {
     flex-direction: row-reverse;
@@ -1530,6 +1558,16 @@ DESKTOP VERSION
     /* border: 2px purple solid; */
   }
 
+    .popup-header h2 {
+  position: fixed;
+  background: white;
+}
+
+.popup-icon {
+  position: fixed;
+  background: white;
+}
+
   /* .oneProject .main-img {
     transition: width 2s, height 2s;
   }
@@ -1680,6 +1718,16 @@ DESKTOP VERSION
   .mobile-popup-window {
     display: none !important;
   }
+
+    .popup-header h2 {
+  position: fixed;
+  background: white;
+}
+
+.popup-icon {
+  position: fixed;
+  background: white;
+}
 
   .see_project {
     margin-top: 10px;
