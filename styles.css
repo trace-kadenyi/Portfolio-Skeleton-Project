@@ -810,7 +810,6 @@ input:focus {
   background: #2230d2;
 }
 
-
 @media screen and (min-width: 540px) and (max-width: 767px) {
   .mobile-skeleton {
     max-width: 100%;
@@ -818,14 +817,14 @@ input:focus {
   }
 
   .popup-header h2 {
-  position: fixed;
-  background: white;
-}
+    position: fixed;
+    background: white;
+  }
 
-.popup-icon {
-  position: fixed;
-  background: white;
-}
+  .popup-icon {
+    position: fixed;
+    background: white;
+  }
 
   .mobile-break {
     display: none;
@@ -1058,15 +1057,15 @@ DESKTOP VERSION
     margin-bottom: 5px;
   }
 
-    .popup-header h2 {
-  position: fixed;
-  background: white;
-}
+  .popup-header h2 {
+    position: fixed;
+    background: white;
+  }
 
-.popup-icon {
-  position: fixed;
-  background: white;
-}
+  .popup-icon {
+    position: fixed;
+    background: white;
+  }
 
   .OneProjectReverse {
     flex-direction: row-reverse;
@@ -1558,15 +1557,15 @@ DESKTOP VERSION
     /* border: 2px purple solid; */
   }
 
-    .popup-header h2 {
-  position: fixed;
-  background: white;
-}
+  .popup-header h2 {
+    position: fixed;
+    background: white;
+  }
 
-.popup-icon {
-  position: fixed;
-  background: white;
-}
+  .popup-icon {
+    position: fixed;
+    background: white;
+  }
 
   /* .oneProject .main-img {
     transition: width 2s, height 2s;
@@ -1719,15 +1718,15 @@ DESKTOP VERSION
     display: none !important;
   }
 
-    .popup-header h2 {
-  position: fixed;
-  background: white;
-}
+  .popup-header h2 {
+    position: fixed;
+    background: white;
+  }
 
-.popup-icon {
-  position: fixed;
-  background: white;
-}
+  .popup-icon {
+    position: fixed;
+    background: white;
+  }
 
   .see_project {
     margin-top: 10px;
