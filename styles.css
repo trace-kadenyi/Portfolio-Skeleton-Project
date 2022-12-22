@@ -763,7 +763,7 @@ input:focus {
 
 .main-img {
   /* border: 2px yellow solid; */
-  width: 300px;
+  /* width: 300px; */
 }
 
 .popup-icon {
@@ -839,7 +839,7 @@ input:focus {
   }
 
   .main-img {
-    min-width: 450px;
+    /* min-width: 450px; */
 
     /* border: 2px blue solid; */
   }
@@ -849,7 +849,7 @@ input:focus {
   }
 
   .text-description {
-    max-width: 400px;
+    /* max-width: 400px; */
     margin-bottom: 20px;
   }
 
@@ -1226,8 +1226,8 @@ DESKTOP VERSION
   }
 
   .main-img {
-    width: 300px;
-    height: 300px;
+    /* width: 300px;
+    height: 300px; */
 
     /* border: 2px yellow solid; */
   }
@@ -1286,8 +1286,8 @@ DESKTOP VERSION
 
   .oneProject .main-img {
     /* border: 2px green solid; */
-    min-width: 300px;
-    margin-right: 100px;
+    /* min-width: 300px;
+    margin-right: 100px; */
 
     /* transition: width 2s, height 2s; */
   }
@@ -1552,7 +1552,8 @@ DESKTOP VERSION
   }
 
   .oneProject .main-img {
-    min-width: 400px;
+    /* min-width: 400px; */
+
 
     /* width: 100%; */
 
@@ -1751,7 +1752,7 @@ DESKTOP VERSION
   } */
 
   .text-description {
-    width: 400px;
+    /* width: 400px; */
   }
 
   .desktop-img-popup {

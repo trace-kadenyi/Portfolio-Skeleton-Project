@@ -62,7 +62,7 @@ const workSection = [
   {
     id: 3,
     class: "OneProjectReverse",
-    title: "Cryptocurrency Webapp",
+    title: "Cryptocurrency App",
     description:
       "A regularly updated list of the cryptocurrency stock market and features 100 cryptocurrencies.",
     popup_description:
