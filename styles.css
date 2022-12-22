@@ -1553,6 +1553,7 @@ DESKTOP VERSION
 
   .oneProject .main-img {
     min-width: 400px;
+    /* width: 100%; */
 
     /* border: 2px purple solid; */
   }
