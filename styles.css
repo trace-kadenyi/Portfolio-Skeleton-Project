@@ -763,6 +763,7 @@ input:focus {
 
 .main-img {
   /* border: 2px yellow solid; */
+
   /* width: 300px; */
 }
 
@@ -1286,6 +1287,7 @@ DESKTOP VERSION
 
   .oneProject .main-img {
     /* border: 2px green solid; */
+
     /* min-width: 300px;
     margin-right: 100px; */
 
@@ -1554,7 +1556,6 @@ DESKTOP VERSION
   .oneProject .main-img {
     /* min-width: 400px; */
 
-
     /* width: 100%; */
 
     /* border: 2px purple solid; */
@@ -1569,15 +1570,6 @@ DESKTOP VERSION
     position: fixed;
     background: white;
   }
-
-  /* .oneProject .main-img {
-    transition: width 2s, height 2s;
-  }
-
-  .oneProject .main-img:hover {
-    width: 380px;
-    height: 370px;
-  } */
 
   .about-pitch {
     font-size: 16px;
